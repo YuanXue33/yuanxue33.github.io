@@ -1,0 +1,630 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/cl-16x16.png">
+  <link rel="icon" href="/img/cl-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="数学[TOC] 结论1，不定积分$\int e^{mx}dx&#x3D;\frac{1}{m}e^{mx}$ $\int \cos(\omega x)dx&#x3D;\frac{1}{\omega}\sin(\omega x)$ $\int \sin(\omega x)dx&#x3D;-\frac{1}{\omega}\cos(\omega x)$ $\int a^xdx&#x3D;\frac{a^x}{\ln a}$ 2，单词拼写错误">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学">
+<meta property="og:url" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/index.html">
+<meta property="og:site_name" content="felsr">
+<meta property="og:description" content="数学[TOC] 结论1，不定积分$\int e^{mx}dx&#x3D;\frac{1}{m}e^{mx}$ $\int \cos(\omega x)dx&#x3D;\frac{1}{\omega}\sin(\omega x)$ $\int \sin(\omega x)dx&#x3D;-\frac{1}{\omega}\cos(\omega x)$ $\int a^xdx&#x3D;\frac{a^x}{\ln a}$ 2，单词拼写错误">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/10.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/20.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/21.gif">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/22.gif">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/14.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/15.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/16.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/17.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/18.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/19.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/01.PNG">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/11.png">
+<meta property="og:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/06.png">
+<meta property="article:published_time" content="2021-10-04T10:51:41.410Z">
+<meta property="article:modified_time" content="2021-10-04T11:30:51.917Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://felsr.github.io/2021/10/04/%E6%95%B0%E5%AD%A6/10.png">
+  
+  <title>数学 | felsr</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"felsr.github.io","root":"/","version":"1.8.12","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="felsr" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Felsr&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="数学">
+              
+                数学
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-10-04 18:51" pubdate>
+        2021年10月4日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      9.2k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      29 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">数学</h1>
+            
+            <div class="markdown-body">
+              <h1 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h1><p>[TOC]</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><h4 id="1，不定积分"><a href="#1，不定积分" class="headerlink" title="1，不定积分"></a>1，不定积分</h4><p>$\int e^{mx}dx=\frac{1}{m}e^{mx}$</p>
+<p>$\int \cos(\omega x)dx=\frac{1}{\omega}\sin(\omega x)$</p>
+<p>$\int \sin(\omega x)dx=-\frac{1}{\omega}\cos(\omega x)$</p>
+<p>$\int a^xdx=\frac{a^x}{\ln a}$</p>
+<h4 id="2，单词拼写错误的种数"><a href="#2，单词拼写错误的种数" class="headerlink" title="2，单词拼写错误的种数"></a>2，单词拼写错误的种数</h4><h6 id="例1"><a href="#例1" class="headerlink" title="例1"></a>例1</h6><p>$school$ 的错误拼写有多少种？</p>
+<p><strong>分析：</strong></p>
+<p>因为单词中有6个字母，除了2个字母 $o$ 以外，其余的字母各不相同，所以种数为<br>$$<br>\frac{\rm{A}^6_{6}}{2!}-1=359<br>$$<br>其中的式子除以 $2!$ 是因为要排除重复的2个字母 $o$ ，而减1是因为正确拼法只有一种，要排除本身的正确拼法。</p>
+<h4 id="3，独立性检验中关系性最强"><a href="#3，独立性检验中关系性最强" class="headerlink" title="3，独立性检验中关系性最强"></a>3，独立性检验中关系性最强</h4><p>$$<br>K^2=\frac{n(ad-bc)}{(a+b)(c+d)(a+c)(b+d)}<br>$$</p>
+<p>$$<br>n=a+b+c+d<br>$$</p>
+<p><strong>当 $|ad-bc|$ 越大，关系性越强。</strong></p>
+<h4 id="4，环状相邻区域的涂色问题"><a href="#4，环状相邻区域的涂色问题" class="headerlink" title="4，环状相邻区域的涂色问题"></a>4，环状相邻区域的涂色问题</h4><p><img src="10.png" srcset="/img/loading.gif" lazyload></p>
+<h6 id="例1-1"><a href="#例1-1" class="headerlink" title="例1"></a>例1</h6><p>如图所示，你有4种颜色的颜料，现在需要将每个圆上色，要求相邻的圆颜色不同，则有多少种不同涂色方式？</p>
+<p><strong>分析：</strong></p>
+<p>① 若A,C同色，涂A有4种，涂B和D都有3种，C颜色与A一样，涂C只有一种，所以有 $4\times3\times3=36$ 种</p>
+<p>② 若A,C不同色，涂A,C从4个里选2个排列，涂B,D都有2种，所以有 $\rm{A}_4^2\times2\times2=48$ 种</p>
+<p>所以共有 $36+48=84$ 种</p>
+<p><strong>组合学问题要正确把握好分类和分步</strong>，如先涂后涂就是分步，用乘法计数，而分类讨论A,C是否同色就是分类，用加法计数。</p>
+<h6 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h6><p>如图所示，你有4种不同颜色，将每个三角形区域上色，要求相邻区域的颜色不同，则有多少种不同涂色方式？</p>
+<p><strong>分析：</strong></p>
+<p>① 若F,C同色，有 $4\times(3\times2)^2=144$ 种</p>
+<p>② 若F,C不同色，有 $\rm{A}_4^2(3+2\times2)^2=588$ 种</p>
+<p>所以共有 $144+488=732$ 种</p>
+<p>归纳推广之，得到结论</p>
+<p>m种不同颜色，n个环状相邻区域，相邻区域颜色不同，不同涂色种类数为<br>$$<br>(m-1)^n+(m-1)\times(-1)^n\<br>n\ne1,2,3,\cdots,m-3<br>$$<br>4种颜色时，种类数为<br>$$<br>\left{<br>\begin{aligned}<br>3^n+3\times(-1)^n&amp;,n\geqslant2\<br>4&amp;,n=1<br>\end{aligned}<br>\right.<br>$$</p>
+<h4 id="5，二次分式的最值问题"><a href="#5，二次分式的最值问题" class="headerlink" title="5，二次分式的最值问题"></a>5，二次分式的最值问题</h4><h6 id="结论-1"><a href="#结论-1" class="headerlink" title="结论"></a>结论</h6><p>设 $m,n,a,b&gt;0$ </p>
+<p>若 $x&gt;y$ 则<br>$$<br>\frac{ma^2+nb^2+xab}{ma^2+nb^2+yab} \leqslant \frac{2\sqrt{mn}+x}{2\sqrt{mn}+y}<br>$$</p>
+<p>若 $x&lt;y$ 则<br>$$<br>\frac{ma^2+nb^2+xab}{ma^2+nb^2+yab} \geqslant \frac{2\sqrt{mn}+x}{2\sqrt{mn}+y}<br>$$</p>
+<h6 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h6><p>$$<br>\frac{ma^2+nb^2+xab}{ma^2+nb^2+yab} = 1+\frac{x-y}{\frac{ma}{b}+\frac{nb}{a}+y}<br>$$<br>然后分类讨论 $x$ 与 $y$ 的大小关系，利用基本不等式可以得到以上结论。</p>
+<h6 id="例1-2"><a href="#例1-2" class="headerlink" title="例1"></a>例1</h6><p>若实数 $x,y$ 满足 $4x^2-5xy+4y^2=5$ ，则 $x^2+y^2$ 的最大值为多少？</p>
+<p>由以上结论可得<br>$$<br>\frac{4x^2+4y^2}{4x^2+4y^2-5xy} \leqslant \frac{2\sqrt{4 \times 4}+0}{2\sqrt{4 \times 4}-5} = \frac{8}{3}<br>$$<br>即<br>$$<br>\frac{4(x^2+y^2)}{5} \leqslant \frac{8}{3}<br>$$<br>故<br>$$<br>x^2+y^2 \leqslant \frac{10}{3}<br>$$</p>
+<h6 id="例2-1"><a href="#例2-1" class="headerlink" title="例2"></a>例2</h6><p>若实数 $x,y$ 满足 $x^2+y^2+xy=1$ ，则 $x+y$ 的最大值为多少？</p>
+<p>由以上结论可得<br>$$<br>x+y \leqslant  \sqrt{x^2+y^2+2xy} = \sqrt{\frac{x^2+y^2+2xy}{x^2+y^2+xy}} \leqslant \sqrt{\frac{2+2}{2+1}}=\frac{2\sqrt{3}}{3}<br>$$</p>
+<h4 id="6，非直角三角形中的正切值"><a href="#6，非直角三角形中的正切值" class="headerlink" title="6，非直角三角形中的正切值"></a>6，非直角三角形中的正切值</h4><h6 id="结论-2"><a href="#结论-2" class="headerlink" title="结论"></a>结论</h6><p>在非直角三角形中，三个角依次是 $A,B,C$ 有下述等式恒成立<br>$$<br>\tan A+\tan B+\tan C=\tan A\tan B\tan C<br>$$</p>
+<h6 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h6><p>$$<br>\begin{align*}<br>\tan A+\tan B+\tan C&amp;=\tan A+\tan B+\tan[\pi-(A+B)]\<br> &amp;=\tan A+\tan B-\tan(A+B)\<br> &amp;=\tan A+\tan B-\frac{\tan A+\tan B}{1-\tan A\tan B}\<br> &amp;=(\tan A+\tan B)(1-\frac{1}{1-\tan A\tan B})\<br> &amp;=(\tan A+\tan B)(\frac{-\tan A\tan B}{1-\tan A\tan B})\<br> &amp;=\tan A\tan B\cdot\frac{-(\tan A+\tan B)}{1-\tan A\tan B}\<br> &amp;=\tan A\tan B\cdot(-\tan(A+B))\<br> &amp;=\tan A\tan B\tan[\pi-(A+B)]\<br> &amp;=\tan A\tan B\tan C<br>\end{align*}<br>$$</p>
+<h6 id="例1-3"><a href="#例1-3" class="headerlink" title="例1"></a>例1</h6><p>在非直角三角形中，三个角依次是 $A,B,C$ ，若 $\tan A=1，\tan B=2$，求 $\tan C$</p>
+<p><strong>分析：</strong></p>
+<p>依据上述结论，可得方程 $3+\tan C=2\tan C$，解得 $\tan C = 3$</p>
+<h4 id="7，点关于直线对称"><a href="#7，点关于直线对称" class="headerlink" title="7，点关于直线对称"></a>7，点关于直线对称</h4><h6 id="结论-3"><a href="#结论-3" class="headerlink" title="结论"></a>结论</h6><p>点 $(x_0,y_0)$ 关于直线 $Ax+By+C=0$ 对称的点为 $(x,y)$，则<br>$$<br>x=x_0-2A\frac{Ax_0+By_0+C}{A^2+B^2}\<br>y=y_0-2B\frac{Ax_0+By_0+C}{A^2+B^2}<br>$$</p>
+<h6 id="反解法"><a href="#反解法" class="headerlink" title="反解法"></a>反解法</h6><p>是上述结论的一个特例，是考题中最经常出现的一种。</p>
+<p>若点 $(x_0,y_0)$ 关于直线 $x\pm y+m=0$ 对称的点为 $(x,y)$ 则满足<br>$$<br>x_0\pm y+m=0\<br>x\pm y_0+m=0<br>$$<br>简单点来说，若一个点关于斜率为 $\pm 1$ 的直线对称，把这个点的横坐标代入直线方程解得纵坐标，反之也成立。</p>
+<h6 id="例1-4"><a href="#例1-4" class="headerlink" title="例1"></a>例1</h6><p>求点 $(2,3)$ 关于直线 $x+y+2=0$ 对称的点的坐标</p>
+<p><strong>分析：</strong></p>
+<p>$2+y+2=0$ 得 $y=-4$，$x+3+2=0$ 得 $x=-5$，所以对称的点坐标为 $(-5,-4)$</p>
+<h4 id="8，四边形面积最大值"><a href="#8，四边形面积最大值" class="headerlink" title="8，四边形面积最大值"></a>8，四边形面积最大值</h4><h6 id="例1-5"><a href="#例1-5" class="headerlink" title="例1"></a>例1</h6><p>已知平面图形 $ABCD$ 为凸四边形，且 $AB=2,BC=4,CD=5,DA=3$，求 $ABCD$ 面积 $S$ 的最大值</p>
+<p><strong>分析：</strong></p>
+<p>根据题意可作出下图</p>
+<p><img src="20.png" srcset="/img/loading.gif" lazyload></p>
+<p>在 $\triangle ABD$ 和 $\triangle CBD$ 中分别使用公式 $S=\frac{1}{2}ab\sin C$ 可得四边形面积为 $S=3\sin A+10\sin C$</p>
+<p>在 $\triangle ABD$ 和 $\triangle CBD$ 中分别使用余弦定理可得等式 $7=-3\cos A+10\cos C$</p>
+<p>两式平方再相加得 $S^2+49=109-60\cos(A+C)$</p>
+<p>当对角互补时，即 $A+C=\pi$ 时，有面积最大值 $S=2\sqrt{30}$</p>
+<p><strong>推广之</strong></p>
+<p>四边形的边长分别为 $a,b,c,d$，四边形的面积最大值为 $S$，则有<br>$$<br>S=\sqrt{(p-a)(p-b)(p-c)(p-d)}\<br>p=\frac{a+b+c+d}{2}<br>$$<br><strong>特例</strong></p>
+<p>当 $a+b=c+d$ 或 $a+c=b+d$ 时，$(p-a)(p-b)(p-c)(p-d)=abcd$</p>
+<p>此时 $S=\sqrt{abcd}$</p>
+<p>例1满足这个特例 $2+5=3+4$ ，因此 $S=\sqrt{2\times4\times5\times3}=2\sqrt{30}$</p>
+<h4 id="9，向量外积"><a href="#9，向量外积" class="headerlink" title="9，向量外积"></a>9，向量外积</h4><p>向量积，数学中又称外积、叉积，物理中称矢积、叉乘，是一种在向量空间中向量的二元运算。与点积不同，它的运算结果是一个向量而不是一个标量，并且两个向量的叉积与这两个向量和垂直。<br>如图，这是 $(2, 4) × (3, 0) = -12$ ，我们得到了一个实数 $-12$ ，而其绝对值为平行四边形面积。 </p>
+<p><img src="21.gif" srcset="/img/loading.gif" lazyload></p>
+<p>如图，这是 $(1, 0, 0) × (2, 4, 0) = (0, 0, 4)$ ，我们得到了一个垂直与已知两向量的法向量，且其模长为平行四边形面积。 </p>
+<p><img src="22.gif" srcset="/img/loading.gif" lazyload></p>
+<h6 id="运算公式"><a href="#运算公式" class="headerlink" title="运算公式"></a>运算公式</h6><p>其中 $\vec{a},\vec b$ 为向量，$θ$ 为 $\vec{a},\vec b$ 的夹角 </p>
+<p>公式1：$|\vec{a}\times \vec{b}|=|\vec{a}| \times |\vec{b}|sinθ$<br>公式2：$(l,m,n) \times (o,p,q)=(mq-np,no-lq,lp-mo)$<br>公式3：$\vec{a}\times \vec{b}=-(\vec{b} \times \vec a)$<br>公式4：三角形面积 $S =| \vec{p} \times \vec{q} |/2$<br>公式5：三棱锥体积 $V=|\vec{a} \cdot ({\vec{b} \times} \vec{c})|/6$</p>
+<h6 id="运用1，已知三点坐标，求三角形面积"><a href="#运用1，已知三点坐标，求三角形面积" class="headerlink" title="运用1，已知三点坐标，求三角形面积"></a>运用1，已知三点坐标，求三角形面积</h6><p>以任意一个点为原点，坐标做差得到两个向量，这两个向量可围成向量三角形<br>例如点 $A (a, b, c)$ ，点 $B (d, e, f)$ ，点 $C (g, h, i)$<br>得到向量 $\vec{p} = (d - a, e - b, f - c)$ 和 $\vec{q} = (g - a, h - b, i - c)$<br>使用公式1，取模长的一半，得到三角形面积 $S =| \vec{p} \times \vec{q} |/2$</p>
+<p>空间向量外积求三角形面积可以很容易的推广到平面上<br>坐标原点与两点 $(x_1,y_1),(x_2,y_2)$ 围成的三角形面积为<br>$$<br>S=\frac{1}{2}|x_1y_2-x_2y_1|<br>$$</p>
+<h6 id="运用2，已知平面，求平面的法向量"><a href="#运用2，已知平面，求平面的法向量" class="headerlink" title="运用2，已知平面，求平面的法向量"></a>运用2，已知平面，求平面的法向量</h6><p>找到平面内不共线的两向量 $\vec a,\vec b$ ，这两个向量决定了这个平面<br>使用公式2，得到向量 $\vec c$ ，按照向量外积的定义，$\vec c$ 垂直于 $\vec a,\vec b$<br>所以向量 $\vec c$ 就是平面的法向量 </p>
+<h6 id="运用3，求三棱锥体积"><a href="#运用3，求三棱锥体积" class="headerlink" title="运用3，求三棱锥体积"></a>运用3，求三棱锥体积</h6><p>由三个不共面向量 $\vec{a},\vec{b},\vec{c}$ 所决定的平行六面体的体积（混合积）为<br>$$<br>V=|\vec{a} \cdot ({\vec{b} \times} \vec{c})|=|\vec{b} \cdot ({\vec{a} \times} \vec{c})|=|\vec{c} \cdot ({\vec{a} \times} \vec{b})|<br>$$<br>故由三个不共面向量所决定的三棱锥的体积为 $V/6$</p>
+<h6 id="怎么用它解题"><a href="#怎么用它解题" class="headerlink" title="怎么用它解题"></a>怎么用它解题</h6><p><strong>已知三点坐标，求三角形面积（公式4）。</strong>按照高中数学的套路，无非就是两点间距离公式算三边长，然后要么用海伦公式算面积，要么用余弦定理求出余弦值，换成正弦值，再求面积，这两种方法海伦公式稍微简便一点，但无非都难算了一些。而使用向量外积则非常简单，我直接算 $|\vec{a}×\vec{b}|/2$ 的值就是面积了。</p>
+<p><strong>已知平面内两向量，求平面的法向量（公式2）</strong>。按照高中数学的套路，无非找出平面内两个不共线向量 $\vec a,\vec b$ ，然后设平面的法向量 $\vec{c} = (x, y, z)$ 然后根据向量垂直 $\vec{c} \cdot\vec{a}= 0$ 和 $\vec{c} \cdot\vec{b}= 0$ 联立解得 $x,y,z$ 为含参的式子（因为一个平面的法向量有无数个），最后取一个容易计算的法向量。而使用向量外积，那就很简单了，计算 $\vec{a} × \vec b$ 就搞定了。</p>
+<p><strong>已知三棱锥其中4个点坐标，求三棱锥的体积（公式5）。</strong>按照高中数学的套路，无非就是用余弦定理和正弦定理算一个面的面积，再用向量的余弦定理算点到面的距离，然后求出体积。如果使用上述的向量混合积公式，找到三个决定三棱锥的向量，一步就能算出体积。</p>
+<h4 id="10，圆锥曲线二级结论"><a href="#10，圆锥曲线二级结论" class="headerlink" title="10，圆锥曲线二级结论"></a>10，圆锥曲线二级结论</h4><h6 id="椭圆"><a href="#椭圆" class="headerlink" title="椭圆"></a>椭圆</h6><ol>
+<li>倾斜角为 $\theta$ 的过焦点的直线与椭圆相交于 $A,B$ 两点，两点间线段的长度为</li>
+</ol>
+<p>$$<br>|AB|=\frac{2ab^2}{a^2-c^2\cos^2\theta}<br>$$<br>2. 倾斜角为 $\theta$ 的过焦点的直线与椭圆相交于 $A,B$ 两点，两点到焦点距离的倒数和为</p>
+<p>$$<br>\frac{1}{AF}+\frac{1}{BF}=\frac{2a}{b^2}<br>$$<br>3. 过原点的直线与椭圆交于 $A,B$ 两点，$P$ 为双曲线上任意一点，有</p>
+<p>$$<br>k_{PA}\cdot k_{PB}=-\frac{b^2}{a^2}<br>$$<br>4. 焦点三角形面积为</p>
+<p>$$<br>S=b^2\tan\frac{\theta}{2}<br>$$</p>
+<h6 id="双曲线"><a href="#双曲线" class="headerlink" title="双曲线"></a>双曲线</h6><ol>
+<li><p>焦点到渐近线的距离为 $b$</p>
+</li>
+<li><p>过原点的直线与双曲线交于 $A,B$ 两点，$P$ 为双曲线上任意一点，有</p>
+</li>
+</ol>
+<p>$$<br>k_{PA}\cdot k_{PB}=\frac{b^2}{a^2}<br>$$<br>3. 焦点三角形面积为</p>
+<p>$$<br>S=\frac{b^2}{\tan\frac{\theta}{2}}<br>$$</p>
+<h6 id="抛物线"><a href="#抛物线" class="headerlink" title="抛物线"></a>抛物线</h6><p>抛物线方程为 $y^2=2px$，倾斜角为 $\theta$ 的直线过抛物线的焦点，直线与抛物线交于两点，有</p>
+<p>$$<br>\begin{aligned}<br>&amp;(1)&amp;&amp;k_{OA}\cdot k_{OB}=-4\<br>&amp;(2)&amp;&amp;|AB|=|x_A+x_B|+p=\frac{2p}{\sin^2\theta}\<br>&amp;(3)&amp;&amp;\frac{1}{AF}+\frac{1}{BF}=\frac{2}{p}\<br>&amp;(4)&amp;&amp;S_{\triangle AOB}=\frac{p^2}{2\sin\theta}<br>\end{aligned}<br>$$</p>
+<h4 id="11，函数的对称性"><a href="#11，函数的对称性" class="headerlink" title="11，函数的对称性"></a>11，函数的对称性</h4><p>① $f(m-x)+f(x)=0$ 关于点 $(\frac{m}{2},0)$ 中心对称</p>
+<p>② $f(m-x)+f(x)=n$ 关于点 $(\frac{m}{2},\frac{n}{2})$ 中心对称</p>
+<p>③ $f(m-x)-f(x)=0$ 关于直线 $x=\frac{m}{2}$对称</p>
+<h4 id="12，函数的周期性"><a href="#12，函数的周期性" class="headerlink" title="12，函数的周期性"></a>12，函数的周期性</h4><p>若存在实数 $T$，使定义在 $\mathbb{R}$ 上的函数满足 $f(x+T)=f(x)$，则函数 $f(x)$ 为周期函数，$T$ 为函数的一个周期，满足上述条件的最小正实数 $T$ 称为函数的最小正周期。</p>
+<ol>
+<li>若函数 $f(x)$ 存在对称中心 $(a,y_0)$ 和对称中心 $(b,y_0)$，则函数的周期为 $2|a-b|$</li>
+<li>若函数 $f(x)$ 存在对称轴 $x=a$ 和对称轴 $x=b$，则函数的周期为 $2|a-b|$</li>
+<li>若函数 $f(x)$ 存在对称中心 $(a,y_0)$ 和对称轴 $x=b$，则函数的周期为 $4|a-b|$</li>
+</ol>
+<p>上述三点可以<strong>结合正余弦函数的图像特点来理解记忆</strong>。</p>
+<ol start="4">
+<li>$f(x+a)=-f(x)$，周期 $T=2a$</li>
+<li>$f(x+a)=f(x-a)$，周期 $T=2a$</li>
+<li>$f(x)\cdot f(x+a)=k$，周期 $T=2a$</li>
+<li>$f(x+a)=\frac{1-f(x)}{1+f(x)}$，周期 $T=2a$</li>
+</ol>
+<p>还有很多，这里就不全部列举了。遇到此类题可以现场推导，实在不行就把数字列举出来，猜测其周期。</p>
+<h4 id="13，函数-y-b-x-a-x-的单调性"><a href="#13，函数-y-b-x-a-x-的单调性" class="headerlink" title="13，函数 y=(b+x)/(a+x) 的单调性"></a>13，函数 y=(b+x)/(a+x) 的单调性</h4><p>$$<br>f(x)=\frac{b+x}{a+x}<br>$$</p>
+<p>对其求导可以得到以下结论</p>
+<p>① 当 $a&gt;b$ 时，$f(x)$ 在 $(-\infty,-a)$ 和 $(-a,+\infty)$ 上单调递增</p>
+<p>② 当 $a&lt;b$ 时，$f(x)$ 在 $(-\infty,-a)$ 和 $(-a,+\infty)$ 上单调递减</p>
+<p>其实可以利用向一杯水里加糖，水的甜度变化来形象的理解记忆。若把 $a,b$ 分别看作水和糖的浓度，则向溶液里加糖，溶液会变甜。若把 $a,b$ 分别看作糖和水的浓度，则向溶液里加水，溶液会变不甜。</p>
+<h4 id="14，函数的奇偶性"><a href="#14，函数的奇偶性" class="headerlink" title="14，函数的奇偶性"></a>14，函数的奇偶性</h4><ol>
+<li>函数 $f(x)=log_a(\sqrt{b^2x^2+1\pm bx})$ 为奇函数</li>
+<li>函数 $f(x)=\frac{a^x+1}{a^x-1}$ 为奇函数</li>
+</ol>
+<h4 id="15，常见函数图像"><a href="#15，常见函数图像" class="headerlink" title="15，常见函数图像"></a>15，常见函数图像</h4><p><strong>1， $f(x)=xe^x$</strong></p>
+<p><img src="14.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>2，$f(x)=\frac{x}{e^x}$</strong></p>
+<p><img src="15.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>3，$f(x)=\frac{e^x}{x}$</strong></p>
+<p><img src="16.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>4，$f(x)=x\ln x$</strong></p>
+<p><img src="17.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>5，$f(x)=\frac{\ln x}{x}$</strong></p>
+<p><img src="18.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>6，$f(x)=\frac{x}{\ln x}$</strong></p>
+<p><img src="19.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><h4 id="例1（提公因式）"><a href="#例1（提公因式）" class="headerlink" title="例1（提公因式）"></a>例1（提公因式）</h4><p>已知函数 $f(x)=\frac{a\ln x}{x+1}+\frac{b}{x}$ ，曲线 $y=f(x)\ 在\ (1,f(1))$ 处的切线方程为 $x+2y-3=0$</p>
+<p>(1) 求 $a,b$ 的值  (2) 证明：当 $x&gt;0$ 且 $x \ne 1$ 时 $f(x)&gt;\frac{\ln x}{x-1}$</p>
+<p><strong>分析：</strong>（第一问略）<br>$$<br>令\ g(x)=\frac{\ln x}{x+1}+\frac{1}{x}-\frac{\ln x}{x-1}=\frac{1}{1-x^2}(2\ln x-x+\frac{1}{x})\<br>令\ h(x)=2\ln x-x+\frac{1}{x}\<br>h’(x)=-\frac{(x-1)^2}{x^2}\<br>因为\ x\ne1\ 所以\ h’(x)&lt;0,h(x)\ 在\ (0,1)\ 和\ (1,+\infty)\ 上单调递减\<br>分类讨论\ x\ 在\ (0,1)\ 和\ (1,+\infty)\ 时\ h(x)\ 和\ \frac{1}{1-x^2}\ 的正负性\<br>可发现\ g(x)\ 恒大于\ 0\ ,于是原命题得证<br>$$</p>
+<p><strong>许多证明不等式的导数题可以通过移项然后构造新函数证明其与 $0$ 的大小关系，通过提公因式把复杂式子变形为乘积形式，分类讨论各个相乘的式子与 $0$ 的关系来证明。</strong></p>
+<h4 id="例2（数形结合）"><a href="#例2（数形结合）" class="headerlink" title="例2（数形结合）"></a>例2（数形结合）</h4><p>若函数 $f(x)=x^3-6x^2+9x$ 在 $(3-a^2,a)$ 内有最大值，求 $a$ 的取值范围</p>
+<p><strong>分析：</strong><br>$$<br>f’(x)=3x^2-12x=3(x-1)(x-3)<br>$$<br>可画出 $f(x)$ 的大致图像：</p>
+<p><img src="01.PNG" srcset="/img/loading.gif" lazyload></p>
+<p>可知当 $x=1$ 时，$f(x)$ 有极大值 $f(1)=4$，我们试图找到 $f(x)=4$ 的另一个根，即 $x^3-6x^2+9x-4=0$ 的另一个根，由于方程已有 $x=1$ 的一个根，可以用原方程除以 $x-1$ ，使用多项式长除法<br>$$<br>\begin{aligned}<br>&amp;\underline{x^2-5x+4}\<br>x-1\ \big)\ &amp;x^3-6x^2+9x-4\<br>&amp;\underline{x^3-\ \ x^2}\<br>&amp;\begin{aligned}<br>\quad,,-5&amp;x^2+9x-4\<br>\underline{-5}&amp;\underline{x^2+5x}\<br>&amp;\ \ \ \ \ \ \ \ \ 4x-4\<br>\end{aligned}<br>\end{aligned}\<br>\qquad\qquad\qquad\qquad \underline{4x-4}\<br>\qquad\qquad\qquad\qquad\qquad\ 0<br>$$</p>
+<p>将 $x^2-5x+4=0$ 配方可得 $(x-4)(x-1)=0$ ，所以 $f(4)=4$<br>结合图像我们可以得到关系式 $3-a^2&lt;1$ 且 $a\in[1,4]$，于是得到 $a\in(\sqrt2,4]$</p>
+<p><strong>这类题要结合图像来分析，灵活使用多项式长除法可以用来求解三次方程和化简高次多项式。</strong></p>
+<h4 id="例3（数形结合）"><a href="#例3（数形结合）" class="headerlink" title="例3（数形结合）"></a>例3（数形结合）</h4><p>已知复数 $z$ 满足 $|z+3-4i|=2$，求 $|z|$ 的最大值</p>
+<p><strong>分析：</strong><br>$$<br>设\ z=x+yi\<br>则有\ |(x+3)+(y-4)i|=2\<br>即\ (x+3)^2+(y-4)^2=2^2\<br>而\ |z|=\sqrt{x^2+y^2}<br>$$<br><img src="11.png" srcset="/img/loading.gif" lazyload></p>
+<p>由上图可以知道 $|z|$ 的最大值为 $5+2=7$</p>
+<h4 id="例4（数形结合）"><a href="#例4（数形结合）" class="headerlink" title="例4（数形结合）"></a>例4（数形结合）</h4><p>曲线 $y=\sin x$ 在点 $P(x_0,\sin x_0)$，$x_0 \in[0,\pi]$ ，处切线为  $l$，则下列各点中不可能在直线 $l$ 上的是？</p>
+<p>$\rm{A}.(-1,-1)\quad\rm{B}.(-2,0)\quad \rm{C}.(1,-2)\quad\rm{D}.(4,1)$</p>
+<p><strong>分析：</strong></p>
+<p>作图可得答案</p>
+<p><img src="06.png" srcset="/img/loading.gif" lazyload></p>
+<h4 id="例5（函数对称性）"><a href="#例5（函数对称性）" class="headerlink" title="例5（函数对称性）"></a>例5（函数对称性）</h4><p>若函数 $f(x)=2\sin (\frac{\pi}{6}x+\frac{\pi}{3})$，$x\in(-2,10)$，图像与 $x$ 轴交于点 $A$，过点 $A$ 的直线 $l$ 与函数的图像交于 $B,C$ 两点，则 $(\vec{OB}+\vec{OC})\cdot \vec{OA}$ 的值为多少？</p>
+<p><strong>分析：</strong></p>
+<p>结合定义域，此函数与 $x$ 轴的交点 $A(4,0)$ 为图像的对称中心，所以 $B,C$ 两点关于点 $A$ 对称，因此<br>$$<br>(\vec{OB}+\vec{OC})\cdot \vec{OA}=2\vec{OA}\cdot \vec{OA}=2|\vec{OA}|^2=2\times4^2=32<br>$$</p>
+<h4 id="例6（函数对称性）"><a href="#例6（函数对称性）" class="headerlink" title="例6（函数对称性）"></a>例6（函数对称性）</h4><p>若函数 $f(x)=\frac{4^x}{4^x+1}$，求 $f(1)+f(2)+f(3)+\cdots+f(2018)+f(-2)+f(-3)+f(-4)+\cdots+f(-2018)$ 的值</p>
+<p><strong>分析：</strong></p>
+<p>注意到对称性，发现<br>$$<br>f(x)+f(-x)=\frac{4^x}{4^x+1}+\frac{4^{-x}}{4^{-x}+1}=1<br>$$<br>因此原式 $=2017\times1+f(1)=2017+\frac{4}{5}$</p>
+<h4 id="例7（函数的奇偶性）"><a href="#例7（函数的奇偶性）" class="headerlink" title="例7（函数的奇偶性）"></a>例7（函数的奇偶性）</h4><p>若函数 $f(x)=2015^x-\log_{2015}(\sqrt{x^2+1}-x)-2015^{-x}+2$，求解不等式 $f(3x+1)+f(x)&gt;4$</p>
+<p><strong>分析：</strong></p>
+<p>令 $g(x)=f(x)-2$，分析可知 $g(x)$ 为奇函数且在定义域上单调递增</p>
+<p>原式化为 $g(3x+1)&gt;g(-x)$ 即 $3x+1&gt;-x$，因此 $x&gt;-\frac{1}{4}$</p>
+<p><strong>对于函数的问题，一定要关注函数的性质，利用函数性质来解题。</strong></p>
+<p>要注意的函数的性质包括：</p>
+<p>1，有界性（<strong>定义域</strong>、上界、下界）；2，<strong>单调性</strong>；3，<strong>奇偶性</strong>；4，<strong>对称性</strong>；5，<strong>周期性</strong>；</p>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h4 id="例1（中值定理）"><a href="#例1（中值定理）" class="headerlink" title="例1（中值定理）"></a>例1（中值定理）</h4><p>已知函数 $f(x) = \frac{1}{2}x^2-2a\ln x+(a-2)x$，是否存在实数 $a$ ，对 $\forall x_1,x_2\in(0,+\infty)$ 且 $x_1\ne x_2$，都有 $\frac{f(x_2)-f(x_1)}{x_2-x_1}&gt;a$ 恒成立？若存在，求出 $a$ 的取值范围</p>
+<p><strong>分析：</strong><br>$$<br>设\ x_2&gt;x_1&gt;0\<br>f(x_2)-f(x_1)&gt;a(x_2-x_1)\<br>f(x_2)-ax_2&gt;f(x_1)-ax_1\<br>令\ g(x)=f(x)-ax,\ 则\ g(x）\ 在\ (0,+\infty)\ 上单调递增\<br>即可求得\ a\in(-\infty,-\frac{1}{2}\rbrack<br>$$</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/10/04/%E7%89%A9%E7%90%86/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">物理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/10/04/%E7%94%9F%E7%89%A9/">
+                        <span class="hidden-mobile">生物</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+    
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        loader: {
+          load: ['ui/lazy']
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
