@@ -16,15 +16,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <meta name="description" content="初次使用Git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name     “用户名”git config –global user.email      “邮箱”  创建空的Git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add “文件名”  将暂存区域的文件提交到Git仓库(com">
+  <meta name="description" content="初次使用git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name     “用户名”git config –global user.email      “邮箱”  创建空的git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add “文件名”  将暂存区域的文件提交到Git仓库(com">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git学习笔记(持更)">
 <meta property="og:url" content="https://felsr.github.io/2021/10/10/Git%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="felsr">
-<meta property="og:description" content="初次使用Git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name     “用户名”git config –global user.email      “邮箱”  创建空的Git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add “文件名”  将暂存区域的文件提交到Git仓库(com">
+<meta property="og:description" content="初次使用git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name     “用户名”git config –global user.email      “邮箱”  创建空的git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add “文件名”  将暂存区域的文件提交到Git仓库(com">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-10T03:38:05.000Z">
-<meta property="article:modified_time" content="2021-10-10T07:51:21.742Z">
+<meta property="article:modified_time" content="2021-10-10T08:12:58.147Z">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -255,11 +255,11 @@
             <h1 style="display: none">Git学习笔记(持更)</h1>
             
             <div class="markdown-body">
-              <p>初次使用Git前的配置（用户名和邮箱都是自己的哦）</p>
+              <p>初次使用git前的配置（用户名和邮箱都是自己的哦）</p>
 <blockquote>
 <p>git config –global user.name     “用户名”<br>git config –global user.email      “邮箱”</p>
 </blockquote>
-<p>创建空的Git仓库(在当前文件夹下创建.git文件夹)</p>
+<p>创建空的git仓库(在当前文件夹下创建.git文件夹)</p>
 <blockquote>
 <p>git init</p>
 </blockquote>
@@ -274,6 +274,26 @@
 <p>克隆仓库</p>
 <blockquote>
 <p>git clone “仓库地址”</p>
+</blockquote>
+<p>查看 git 当前的工作状态</p>
+<blockquote>
+<p>git status</p>
+</blockquote>
+<p>将最近一次添加到暂存区域的文件恢复到先前状态(&lt;file&gt; 是可选的，如果没有的话，就是对最后一次添加到暂存区的所有文件进行回退操作，如果有 file 的话，就是对添加到暂存区的指定的 file 进行回退操作。)</p>
+<blockquote>
+<p>git reset HEAD &lt;file&gt;</p>
+</blockquote>
+<p>将 暂存区域的旧版本覆盖回 修改的新版本</p>
+<blockquote>
+<p>git checkout – &lt;file&gt;</p>
+</blockquote>
+<p>查看历史提交记录</p>
+<blockquote>
+<p>git log</p>
+</blockquote>
+<p>覆暂存区并提交</p>
+<blockquote>
+<p>git commit -am “注释说明”</p>
 </blockquote>
 
             </div>
