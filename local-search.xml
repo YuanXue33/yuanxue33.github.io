@@ -8,7 +8,7 @@
     <link href="/2021/10/10/Git%E5%AD%A6%E4%B9%A0/"/>
     <url>/2021/10/10/Git%E5%AD%A6%E4%B9%A0/</url>
     
-    <content type="html"><![CDATA[<p>初次使用Git前的配置（用户名和邮箱都是自己的哦）</p><blockquote><p>git config –global user.name     “用户名”<br>git config –global user.email      “邮箱”</p></blockquote><p>创建空的Git仓库(在当前文件夹下创建.git文件夹)</p><blockquote><p>git init</p></blockquote><p>将需要进行版本管理的文件放入暂存区域</p><blockquote><p>git add “文件名</p></blockquote><p>将暂存区域的文件提交到Git仓库(commit是提交的意思，-m选项后边跟着的是本次提交的说明)</p><blockquote><p>git commit -m “注释说明”</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>初次使用Git前的配置（用户名和邮箱都是自己的哦）</p><blockquote><p>git config –global user.name     “用户名”<br>git config –global user.email      “邮箱”</p></blockquote><p>创建空的Git仓库(在当前文件夹下创建.git文件夹)</p><blockquote><p>git init</p></blockquote><p>将需要进行版本管理的文件放入暂存区域</p><blockquote><p>git add “文件名”</p></blockquote><p>将暂存区域的文件提交到Git仓库(commit是提交的意思，-m选项后边跟着的是本次提交的说明)</p><blockquote><p>git commit -m “注释说明”</p></blockquote><p>克隆仓库</p><blockquote><p>git clone “仓库地址”</p></blockquote>]]></content>
     
     
     
