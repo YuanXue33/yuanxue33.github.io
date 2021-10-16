@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>基本不等式</title>
+    <link href="/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
+    <url>/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<p>主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。</p><hr><p>命题1：$\frac{a+b}{2} \ge \sqrt{ab} , a&gt;0 , b&gt;0$ </p><blockquote><p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p><p>令 $a&gt;0 , b&gt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$ 有：<br>$a+b \ge \sqrt{4ab}$ </p><p>继续化简得：<br>$a+b \ge 2 \sqrt{ab}$<br>$\frac{a+b}{2} \ge \sqrt{ab}$</p></blockquote><p>命题2： $\frac{a+b}{2} \le -\sqrt{ab} , a&lt;0 , b&lt;0$ </p><blockquote><p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p><p>令 $a&lt;0,b&lt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$ 有：<br>$a+b \le -\sqrt{4ab}$ (为什么 $a+b$ 前面不用加负号，而 $-\sqrt{4ab}$ 前面要加负号？)</p><p>继续化简得：<br>$a+b \le -2\sqrt{ab}$<br>$\frac{a+b}{2} \le -\sqrt{ab}$ </p></blockquote><hr><p>习题1：</p><blockquote><p>试思考以下两个命题为什么成立，如果可以的话，尝试证明一下<br>若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$<br>若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$</p></blockquote><p>习题2：</p><blockquote><p>证明以下不等式，并思考在 $a&lt;0,b&lt;0$ 时的情况<br>$\frac{2}{\frac{1}{a}+\frac{1}{b}} \le \sqrt{ab} \le \frac{a+b}{2} \le \sqrt{\frac{a^2+b^2}{2}} , a&gt;0,b&gt;0$​</p></blockquote><p>习题3：</p><blockquote><p>若 $a&gt;b&gt;c,a+b+c=0$ 则一定有 $a&gt;0,c&lt;0$​ (提示：用反证法)</p></blockquote><p>求助（我没想出来）：</p><blockquote><p>“习题3” 不用反证法能不能证出来？</p></blockquote><hr><p>习题做完可以把答案发在评论区啊！！！（评论支持latex公式，不会也可以学学，很简单的）</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高中数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Git学习笔记(持更)</title>
     <link href="/2021/10/10/Git%E5%AD%A6%E4%B9%A0/"/>
     <url>/2021/10/10/Git%E5%AD%A6%E4%B9%A0/</url>

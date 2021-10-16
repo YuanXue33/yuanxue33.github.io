@@ -16,19 +16,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <meta name="description" content="简单版本控制指令初次使用git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name “用户名”git config –global user.email “邮箱”  创建空的git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add &lt;file&gt;  将暂存区域的文件提交到Git">
+  <meta name="description" content="主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。  命题1：$\frac{a+b}{2} \ge \">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git学习笔记(持更)">
-<meta property="og:url" content="https://felsr.github.io/2021/10/10/Git%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="基本不等式">
+<meta property="og:url" content="https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/index.html">
 <meta property="og:site_name" content="felsr">
-<meta property="og:description" content="简单版本控制指令初次使用git前的配置（用户名和邮箱都是自己的哦）  git config –global user.name “用户名”git config –global user.email “邮箱”  创建空的git仓库(在当前文件夹下创建.git文件夹)  git init  将需要进行版本管理的文件放入暂存区域  git add &lt;file&gt;  将暂存区域的文件提交到Git">
+<meta property="og:description" content="主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。  命题1：$\frac{a+b}{2} \ge \">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-10T03:38:05.000Z">
-<meta property="article:modified_time" content="2021-10-15T15:40:19.542Z">
-<meta property="article:tag" content="笔记">
+<meta property="article:published_time" content="2021-10-16T13:46:18.000Z">
+<meta property="article:modified_time" content="2021-10-16T15:21:29.764Z">
+<meta property="article:tag" content="高中数学">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>Git学习笔记(持更) | felsr</title>
+  <title>基本不等式 | felsr</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -203,9 +203,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Git学习笔记(持更)">
+            <span class="h2" id="subtitle" title="基本不等式">
               
-                Git学习笔记(持更)
+                基本不等式
               
             </span>
 
@@ -215,8 +215,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-10-10 11:38" pubdate>
-        2021年10月10日 中午
+      <time datetime="2021-10-16 21:46" pubdate>
+        2021年10月16日 晚上
       </time>
     </span>
   
@@ -252,70 +252,42 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Git学习笔记(持更)</h1>
+            <h1 style="display: none">基本不等式</h1>
             
             <div class="markdown-body">
-              <h1 id="简单版本控制"><a href="#简单版本控制" class="headerlink" title="简单版本控制"></a>简单版本控制</h1><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p>初次使用git前的配置（用户名和邮箱都是自己的哦）</p>
+              <p>主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。</p>
+<hr>
+<p>命题1：$\frac{a+b}{2} \ge \sqrt{ab} , a&gt;0 , b&gt;0$ </p>
 <blockquote>
-<p>git config –global user.name “用户名”<br>git config –global user.email “邮箱”</p>
+<p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p>
+<p>令 $a&gt;0 , b&gt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$ 有：<br>$a+b \ge \sqrt{4ab}$ </p>
+<p>继续化简得：<br>$a+b \ge 2 \sqrt{ab}$<br>$\frac{a+b}{2} \ge \sqrt{ab}$</p>
 </blockquote>
-<p>创建空的git仓库(在当前文件夹下创建.git文件夹)</p>
+<p>命题2： $\frac{a+b}{2} \le -\sqrt{ab} , a&lt;0 , b&lt;0$ </p>
 <blockquote>
-<p>git init</p>
+<p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p>
+<p>令 $a&lt;0,b&lt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$ 有：<br>$a+b \le -\sqrt{4ab}$ (为什么 $a+b$ 前面不用加负号，而 $-\sqrt{4ab}$ 前面要加负号？)</p>
+<p>继续化简得：<br>$a+b \le -2\sqrt{ab}$<br>$\frac{a+b}{2} \le -\sqrt{ab}$ </p>
 </blockquote>
-<p>将需要进行版本管理的文件放入暂存区域</p>
+<hr>
+<p>习题1：</p>
 <blockquote>
-<p>git add &lt;file&gt;</p>
+<p>试思考以下两个命题为什么成立，如果可以的话，尝试证明一下<br>若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$<br>若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$</p>
 </blockquote>
-<p>将暂存区域的文件提交到Git仓库(commit是提交的意思，-m选项后边跟着的是本次提交的说明)</p>
+<p>习题2：</p>
 <blockquote>
-<p>git commit -m “注释说明”</p>
+<p>证明以下不等式，并思考在 $a&lt;0,b&lt;0$ 时的情况<br>$\frac{2}{\frac{1}{a}+\frac{1}{b}} \le \sqrt{ab} \le \frac{a+b}{2} \le \sqrt{\frac{a^2+b^2}{2}} , a&gt;0,b&gt;0$​</p>
 </blockquote>
-<p>克隆仓库</p>
+<p>习题3：</p>
 <blockquote>
-<p>git clone “仓库地址”</p>
+<p>若 $a&gt;b&gt;c,a+b+c=0$ 则一定有 $a&gt;0,c&lt;0$​ (提示：用反证法)</p>
 </blockquote>
-<p>查看 git 当前的工作状态</p>
+<p>求助（我没想出来）：</p>
 <blockquote>
-<p>git status</p>
+<p>“习题3” 不用反证法能不能证出来？</p>
 </blockquote>
-<p>将最近一次添加到暂存区域的文件恢复到先前状态(&lt;file&gt; 是可选的，如果没有的话，就是对最后一次添加到暂存区的所有文件进行回退操作，如果有 file 的话，就是对添加到暂存区的指定的 file 进行回退操作。)</p>
-<blockquote>
-<p>git reset HEAD – &lt;file&gt;</p>
-</blockquote>
-<p>将 暂存区域的旧版本覆盖回 修改的新版本</p>
-<blockquote>
-<p>git checkout – &lt;file&gt;</p>
-</blockquote>
-<p>查看历史提交记录</p>
-<blockquote>
-<p>git log</p>
-</blockquote>
-<p>覆暂存区并提交</p>
-<blockquote>
-<p>git commit -am “注释说明”</p>
-<p>或 git commit -a -m</p>
-<p>不可以是 git commit -m -a</p>
-</blockquote>
-<h2 id="归纳"><a href="#归纳" class="headerlink" title="归纳"></a>归纳</h2><blockquote>
-<p>•add<br>–用于把工作目录的文件放入暂存区域<br>•commit<br>–用于把暂存区域的文件提交到Git仓库<br>•reset<br>–用于把Git仓库的文件还原到暂存区域<br>•checkout<br>–用于把暂存区域的文件还原到工作目录</p>
-</blockquote>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>创建分支</p>
-<blockquote>
-<p>git branch 分支名</p>
-</blockquote>
-<p>切换分支</p>
-<blockquote>
-<p>git checkout 分支名</p>
-</blockquote>
-<p>合并分支(将分支合并到HEAD所在的分支(master)上)</p>
-<blockquote>
-<p>git merge 分支名</p>
-</blockquote>
-<p>删除分支</p>
-<blockquote>
-<p>git branch -d 分支名</p>
-</blockquote>
+<hr>
+<p>习题做完可以把答案发在评论区啊！！！（评论支持latex公式，不会也可以学学，很简单的）</p>
 
             </div>
             <hr>
@@ -326,7 +298,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+                      <a class="hover-with-bg" href="/tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/">高中数学</a>
                     
                   </div>
                 
@@ -337,18 +309,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">基本不等式</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/10/05/%E7%AE%80%E5%8D%95%E7%9A%84%E6%A6%82%E7%8E%87%E9%97%AE%E9%A2%98/">
-                        <span class="hidden-mobile">简单的概率问题</span>
+                      <a href="/2021/10/10/Git%E5%AD%A6%E4%B9%A0/">
+                        <span class="hidden-mobile">Git学习笔记(持更)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -6,10 +6,33 @@
   <link href="https://felsr.github.io/atom.xml" rel="self"/>
   
   <link href="https://felsr.github.io/"/>
-  <updated>2021-10-15T15:40:19.542Z</updated>
+  <updated>2021-10-16T15:21:29.764Z</updated>
   <id>https://felsr.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基本不等式</title>
+    <link href="https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
+    <id>https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</id>
+    <published>2021-10-16T13:46:18.000Z</published>
+    <updated>2021-10-16T15:21:29.764Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="高中数学" scheme="https://felsr.github.io/tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>Git学习笔记(持更)</title>
