@@ -16,19 +16,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <meta name="description" content="主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。  命题1：$\frac{a+b}{2} \ge \">
+  <meta name="description" content="写给自己看的，非常的令人看不懂 看的视频 #基本 打印输出  print() print(“string”) 或者 print(‘string’) 若有分号，则在分号前加”\“，即转义字符  变量类型转换  字符串： str() 整型： int() 小数： float()  运算符  加减乘除： + - * &#x2F; 乘方： ** 取余数： % 取整数： &#x2F;&#x2F;  变量  一次定义多个变量： 变量1,变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基本不等式">
-<meta property="og:url" content="https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/index.html">
+<meta property="og:title" content="python笔记(持更)">
+<meta property="og:url" content="https://felsr.github.io/2021/10/23/python%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="felsr">
-<meta property="og:description" content="主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。  命题1：$\frac{a+b}{2} \ge \">
+<meta property="og:description" content="写给自己看的，非常的令人看不懂 看的视频 #基本 打印输出  print() print(“string”) 或者 print(‘string’) 若有分号，则在分号前加”\“，即转义字符  变量类型转换  字符串： str() 整型： int() 小数： float()  运算符  加减乘除： + - * &#x2F; 乘方： ** 取余数： % 取整数： &#x2F;&#x2F;  变量  一次定义多个变量： 变量1,变量">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-16T13:46:18.000Z">
-<meta property="article:modified_time" content="2021-10-22T10:18:45.199Z">
-<meta property="article:tag" content="高中数学">
+<meta property="article:published_time" content="2021-10-23T14:05:38.000Z">
+<meta property="article:modified_time" content="2021-10-23T14:52:16.325Z">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>基本不等式 | felsr</title>
+  <title>python笔记(持更) | felsr</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -203,9 +203,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="基本不等式">
+            <span class="h2" id="subtitle" title="python笔记(持更)">
               
-                基本不等式
+                python笔记(持更)
               
             </span>
 
@@ -215,8 +215,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-10-16 21:46" pubdate>
-        2021年10月16日 晚上
+      <time datetime="2021-10-23 22:05" pubdate>
+        2021年10月23日 晚上
       </time>
     </span>
   
@@ -252,38 +252,60 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">基本不等式</h1>
+            <h1 style="display: none">python笔记(持更)</h1>
             
             <div class="markdown-body">
-              <p>主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。</p>
-<hr>
-<p>命题1：$\frac{a+b}{2} \ge \sqrt{ab} , a&gt;0 , b&gt;0$ </p>
+              <p>写给自己看的，非常的令人看不懂</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wW411Y7ai">看的视频</a></p>
+<p>#基本</p>
+<p>打印输出</p>
 <blockquote>
-<p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p>
-<p>令 $a&gt;0 , b&gt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$ 有：<br>$a+b \ge \sqrt{4ab}$ </p>
-<p>继续化简得：<br>$a+b \ge 2 \sqrt{ab}$<br>$\frac{a+b}{2} \ge \sqrt{ab}$</p>
+<p>print()</p>
+<p>print(“string”) 或者 print(‘string’)</p>
+<p>若有分号，则在分号前加”\“，即转义字符</p>
 </blockquote>
-<p>命题2： $\frac{a+b}{2} \le -\sqrt{ab} , a&lt;0 , b&lt;0$ </p>
+<p>变量类型转换</p>
 <blockquote>
-<p>因为 $(a-b)^2 \ge 0$<br>所以有：<br>$a^2 + b^2 \ge 2ab$<br>$a^2 + b^2 +2ab \ge 4ab$<br>$(a+b)^2 \ge 4ab$ </p>
-<p>令 $a&lt;0,b&lt;0$<br>根据习题1：若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$ 有：<br>$a+b \le -\sqrt{4ab}$ (为什么 $a+b$ 前面不用加负号，而 $-\sqrt{4ab}$ 前面要加负号？)</p>
-<p>继续化简得：<br>$a+b \le -2\sqrt{ab}$<br>$\frac{a+b}{2} \le -\sqrt{ab}$ </p>
+<p>字符串：</p>
+<p>str()</p>
+<p>整型：</p>
+<p>int()</p>
+<p>小数：</p>
+<p>float()</p>
 </blockquote>
-<hr>
-<p>习题1：</p>
+<p>运算符</p>
 <blockquote>
-<p>试思考以下两个命题为什么成立，如果可以的话，尝试证明一下<br>若 $a^2 &gt; b^2$ 且 $a&gt;0 , b&gt;0$ 则 $a&gt;b$<br>若 $a^2 &gt; b^2$ 且 $a&lt;0 , b&lt;0$ 则 $a&lt;b$</p>
+<p>加减乘除：</p>
+<p>+ - * /</p>
+<p>乘方：</p>
+<p>**</p>
+<p>取余数：</p>
+<p>%</p>
+<p>取整数：</p>
+<p>//</p>
 </blockquote>
-<p>习题2：</p>
+<p>变量</p>
 <blockquote>
-<p>证明以下不等式，并思考在 $a&lt;0,b&lt;0$ 时的情况<br>$\frac{2}{\frac{1}{a}+\frac{1}{b}} \le \sqrt{ab} \le \frac{a+b}{2} \le \sqrt{\frac{a^2+b^2}{2}} , a&gt;0,b&gt;0$​</p>
+<p>一次定义多个变量：</p>
+<p>变量1,变量2,变量3 = 值1,值2,值3</p>
 </blockquote>
-<p>习题3：</p>
+<h1 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h1><p>while循环</p>
 <blockquote>
-<p>若 $a&gt;b&gt;c,a+b+c=0$ 则一定有 $a&gt;0,c&lt;0$​ </p>
+<p>while “命题”:</p>
+<p>​    ”代码“</p>
+<p>p.s “while True:” 一直为真，所以会不断运行里面的代码</p>
+<p>p.s. p.s 可以按 Ctrl + c 停止</p>
 </blockquote>
-<hr>
-<p>习题做完可以把答案发在评论区啊！！！（评论支持latex公式，不会也可以学学，很简单的）</p>
+<p>for循环</p>
+<blockquote>
+<p>for 变量 in 列表:</p>
+<p>​    “代码”</p>
+<p>for 变量 in range(开始，结束，步长)：</p>
+<p>​    ”代码“</p>
+<p>p.s. range输出的是一个列表，且 $开始 \le 变量 &lt; 结束$​ ​​</p>
+<p>p.s. p.s. list(range()) 显示列表</p>
+<p>p.s. Ctrl + [ 或者 Ctrl + ] 改变缩进结构</p>
+</blockquote>
 
             </div>
             <hr>
@@ -294,7 +316,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6/">高中数学</a>
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
                     
                   </div>
                 
@@ -305,18 +327,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/10/23/python%E7%AC%94%E8%AE%B0/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">python笔记(持更)</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/10/10/Git%E5%AD%A6%E4%B9%A0/">
-                        <span class="hidden-mobile">Git学习笔记(持更)</span>
+                      <a href="/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/">
+                        <span class="hidden-mobile">基本不等式</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
