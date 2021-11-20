@@ -4,25 +4,6 @@
   
   
   <entry>
-    <title>python笔记(持更)</title>
-    <link href="/2021/10/23/python%E7%AC%94%E8%AE%B0/"/>
-    <url>/2021/10/23/python%E7%AC%94%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<p>写给自己看的，非常的令人看不懂</p><p><a href="https://www.bilibili.com/video/BV1wW411Y7ai">看的视频</a></p><p>#基本</p><p>打印输出</p><blockquote><p>print()</p><p>print(“string”) 或者 print(‘string’)</p><p>若有分号，则在分号前加”\“，即转义字符</p></blockquote><p>变量类型转换</p><blockquote><p>字符串：</p><p>str()</p><p>整型：</p><p>int()</p><p>小数：</p><p>float()</p></blockquote><p>运算符</p><blockquote><p>加减乘除：</p><p>+ - * /</p><p>乘方：</p><p>**</p><p>取余数：</p><p>%</p><p>取整数：</p><p>//</p></blockquote><p>变量</p><blockquote><p>一次定义多个变量：</p><p>变量1,变量2,变量3 = 值1,值2,值3</p></blockquote><h1 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h1><p>while循环</p><blockquote><p>while “命题”:</p><p>​    ”代码“</p><p>p.s “while True:” 一直为真，所以会不断运行里面的代码</p><p>p.s. p.s 可以按 Ctrl + c 停止</p></blockquote><p>for循环</p><blockquote><p>for 变量 in 列表:</p><p>​    “代码”</p><p>for 变量 in range(开始，结束，步长)：</p><p>​    ”代码“</p><p>p.s. range输出的是一个列表，且 $开始 \le 变量 &lt; 结束$​ ​​</p><p>p.s. p.s. list(range()) 显示列表</p><p>p.s. Ctrl + [ 或者 Ctrl + ] 改变缩进结构</p></blockquote><p>if条件</p><blockquote><p>if “命题”:</p><p>​    “代码”</p><p>elif “命题”:</p><p>​    “代码”</p><p>……(可以加很多个elif)</p><p>else:</p><p>​    “代码”</p></blockquote><p>def函数</p><blockquote><p>def 函数名(参数1,参数2,……,默认参数1=值1,默认参数2=值2……):</p><p>​    “代码”</p><p>​    return 返回值</p></blockquote><p>class类</p><blockquote><p>class 类名:</p><p>​    属性</p><p>​    功能(def)</p></blockquote><p>input</p><blockquote><p>变量 = input(“描述”)</p><p>运行后会要求输入值,并把输入的值赋值给变量</p></blockquote>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>笔记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>基本不等式</title>
     <link href="/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
     <url>/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</url>
@@ -34,25 +15,6 @@
     <tags>
       
       <tag>高中数学</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Git学习笔记(持更)</title>
-    <link href="/2021/10/10/Git%E5%AD%A6%E4%B9%A0/"/>
-    <url>/2021/10/10/Git%E5%AD%A6%E4%B9%A0/</url>
-    
-    <content type="html"><![CDATA[<h1 id="简单版本控制"><a href="#简单版本控制" class="headerlink" title="简单版本控制"></a>简单版本控制</h1><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p>初次使用git前的配置（用户名和邮箱都是自己的哦）</p><blockquote><p>git config –global user.name “用户名”<br>git config –global user.email “邮箱”</p></blockquote><p>创建空的git仓库(在当前文件夹下创建.git文件夹)</p><blockquote><p>git init</p></blockquote><p>将需要进行版本管理的文件放入暂存区域</p><blockquote><p>git add &lt;file&gt;</p></blockquote><p>将暂存区域的文件提交到Git仓库(commit是提交的意思，-m选项后边跟着的是本次提交的说明)</p><blockquote><p>git commit -m “注释说明”</p></blockquote><p>克隆仓库</p><blockquote><p>git clone “仓库地址”</p></blockquote><p>查看 git 当前的工作状态</p><blockquote><p>git status</p></blockquote><p>将最近一次添加到暂存区域的文件恢复到先前状态(&lt;file&gt; 是可选的，如果没有的话，就是对最后一次添加到暂存区的所有文件进行回退操作，如果有 file 的话，就是对添加到暂存区的指定的 file 进行回退操作。)</p><blockquote><p>git reset HEAD – &lt;file&gt;</p></blockquote><p>将 暂存区域的旧版本覆盖回 修改的新版本</p><blockquote><p>git checkout – &lt;file&gt;</p></blockquote><p>查看历史提交记录</p><blockquote><p>git log</p></blockquote><p>覆暂存区并提交</p><blockquote><p>git commit -am “注释说明”</p><p>或 git commit -a -m</p><p>不可以是 git commit -m -a</p></blockquote><h2 id="归纳"><a href="#归纳" class="headerlink" title="归纳"></a>归纳</h2><blockquote><p>•add<br>–用于把工作目录的文件放入暂存区域<br>•commit<br>–用于把暂存区域的文件提交到Git仓库<br>•reset<br>–用于把Git仓库的文件还原到暂存区域<br>•checkout<br>–用于把暂存区域的文件还原到工作目录</p></blockquote><h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>创建分支</p><blockquote><p>git branch 分支名</p></blockquote><p>切换分支</p><blockquote><p>git checkout 分支名</p></blockquote><p>合并分支(将分支合并到HEAD所在的分支(master)上)</p><blockquote><p>git merge 分支名</p></blockquote><p>删除分支</p><blockquote><p>git branch -d 分支名</p></blockquote>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>笔记</tag>
       
     </tags>
     
