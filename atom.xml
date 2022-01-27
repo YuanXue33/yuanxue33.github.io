@@ -6,7 +6,7 @@
   <link href="https://felsr.github.io/atom.xml" rel="self"/>
   
   <link href="https://felsr.github.io/"/>
-  <updated>2022-01-27T13:58:10.000Z</updated>
+  <updated>2022-01-27T16:20:05.393Z</updated>
   <id>https://felsr.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -16,10 +16,10 @@
     <link href="https://felsr.github.io/2021/12/05/%E4%BF%A1%E6%81%AF%E4%B8%8E%E9%9A%90%E7%A7%81/"/>
     <id>https://felsr.github.io/2021/12/05/%E4%BF%A1%E6%81%AF%E4%B8%8E%E9%9A%90%E7%A7%81/</id>
     <published>2021-12-04T17:45:22.000Z</published>
-    <updated>2022-01-27T13:58:10.000Z</updated>
+    <updated>2022-01-27T16:20:05.393Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;电脑与手机&quot;&gt;&lt;a href=&quot;#电脑与手机&quot; class=&quot;headerlink&quot; title=&quot;电脑与手机&quot;&gt;&lt;/a&gt;电脑与手机&lt;/h1&gt;&lt;p&gt;现在国内app甚至网页端基本都有信息流，但有时候真的只是需要查点东西却被无关紧要的信息吸引，网页端还可以用很多办法解决，但手机端几乎是不可能的。再者很多网页对手机浏览器的优化也不够好，也不能进行高级操作。在手机上即使是想主动的找信息也很容易被其他信息干扰，从而导致人们被动的接受信息，我认为这才是现在很多人只会用手机不会用电脑的原因。准确的来说连手机都不会用，举个例子，安卓手机的很多相册app都有密码锁的功能，但是锁上之后还是能看得到照片的，就在文件资源管理器里面找到存放照片的文件夹。还有别以为手机电脑加上密码就安全了，这只是一个系统，外接另一个系统就可以访问硬盘里面的所有资料。举个例子：对于Windows，用u盘弄个pe启动盘，重启电脑进入pe系统可以破解windows密码，访问任何文件夹，甚至删除windows系统然后你的电脑就开不了机了。&lt;br&gt;第二点，在手机上很难接触到小众论坛，因为它们基本上都是网页端的，能做成app的已经不小众了。学会用电脑的一个好处就是接触这些小众论坛避免被信息流淹没自己真正想知道的，要知道人是有求知欲的吖。我并不反对在信息流推荐中获取信息，但你会错过互联网发展中最精彩的部分。&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;电脑与手机&quot;&gt;&lt;a href=&quot;#电脑与手机&quot; class=&quot;headerlink&quot; title=&quot;电脑与手机&quot;&gt;&lt;/a&gt;电脑与手机&lt;/h1&gt;&lt;p&gt;现在国内app甚至网页端基本都有信息流，但有时候真的只是需要查点东西却被无关紧要的信息吸引，网页端还可以用很多办法解决，但手机端几乎是不可能的。再者很多网页对手机浏览器的优化也不够好，也不能进行高级操作。在手机上即使是想主动的找信息也很容易被其他信息干扰，从而导致人们被动的接受信息，我认为这才是现在很多人只会用手机不会用电脑的原因。&lt;/p&gt;</summary>
     
     
     
@@ -33,17 +33,10 @@
     <link href="https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
     <id>https://felsr.github.io/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</id>
     <published>2021-10-16T13:46:18.000Z</published>
-    <updated>2022-01-27T13:57:54.091Z</updated>
+    <updated>2022-01-27T16:20:28.488Z</updated>
     
     
-    <summary type="html">&lt;p&gt;主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;命题1：$\frac{a+b}{2} \ge \sqrt{ab} , a&amp;gt;0 , b&amp;gt;0$ &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因为 $(a-b)^2 \ge 0$&lt;br&gt;所以有：&lt;br&gt;$a^2 + b^2 \ge 2ab$&lt;br&gt;$a^2 + b^2 +2ab \ge 4ab$&lt;br&gt;$(a+b)^2 \ge 4ab$ &lt;/p&gt;
-&lt;p&gt;令 $a&amp;gt;0 , b&amp;gt;0$&lt;br&gt;根据习题1：若 $a^2 &amp;gt; b^2$ 且 $a&amp;gt;0 , b&amp;gt;0$ 则 $a&amp;gt;b$ 有：&lt;br&gt;$a+b \ge \sqrt{4ab}$ &lt;/p&gt;
-&lt;p&gt;继续化简得：&lt;br&gt;$a+b \ge 2 \sqrt{ab}$&lt;br&gt;$\frac{a+b}{2} \ge \sqrt{ab}$&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p&gt;主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。&lt;/p&gt;</summary>
     
     
     
