@@ -37,7 +37,7 @@
   </entry>
   <entry>
     <title>基本不等式</title>
-    <url>/2021/10/16/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</url>
+    <url>/2021/10/16/0_%E5%BD%92%E6%A1%A3/%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>主要是写给高中生的，关于基本不等式是怎么证明的，很简单的。当然证明并不算严谨（例如 $a^2 \ge 0$​​​​ 、乘以正数不变号、……，这些不等式基本的性质没有论证），就这样吧。命题2的证明中的“为什么”是值得思考的，习题1的严格证明是有点难度（相对而言），但是可以直观的思考为什么，习题2和习题3都是可以证出来的，希望能尽力去做一下这些习题。</p>
 <span id="more"></span>
 <hr>
