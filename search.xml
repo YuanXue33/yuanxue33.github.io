@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>匀速圆周运动的向心加速度</title>
+    <url>/2022/03/05/%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E7%9A%84%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><p>在物理必修二中我们学到了匀速圆周运动的向心加速度大小公式：$a = \frac{v^2}{r}$ </p>
+<p>在课本中给出的推导是通过实验，控制变量，探究正、反比关系，从而得出公式的。不过我们也可以通过定义推导的方式得出公式，这就是这篇文章要写的。</p>
+<h1 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h1><p><img src="/2022/03/05/%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E7%9A%84%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6/%5C1.png"></p>
+<p>我们不妨假设，以A为起点，经过时间 $\Delta t$ 后运动到B点，并且速率恒为 $v$ </p>
+<p>由于速率一定，所以走过的路程 $\overset{\frown}{AB} = \Delta t \cdot v$ 。</p>
+<p>又因为 $\overset{\frown}{AB} = \theta \cdot r$ ，所以有：<br>$$<br>\Delta t = \frac{\theta \cdot r}{v}<br>$$<br>接着再考虑速度，初速度为 $v_1$ ，末速度为 $v_2$ ，速度的变化量为 $\Delta v$ </p>
+<p>把 $v_1$ 平移到与 $v_2$ 的起点相同，得到 $v_1’$ </p>
+<p>易知 $v_1’$ 和 $v_2$ 的夹角 $\theta ‘$ 等于 $\theta$ </p>
+<p>由于 $v_1’$ 和 $v_2$ 的长度为 $v$ ，即 $|v_1’| = |v_2| = v$ </p>
+<p>由几何关系易知：<br>$$<br>|\Delta v| =2v \sin{\frac{\theta}{2}}<br>$$<br>瞬时加速度的定义是：<br>$$<br>a = \lim_{\Delta t \to 0}{\frac{\Delta v}{\Delta t}}<br>$$<br>因为 $\Delta t = \frac{\theta \cdot r}{v}$ ，所以当 $\Delta t \to 0$ 时 $\theta \to 0$ ，$\frac{\theta}{2} \to 0$ </p>
+<p>所以匀速圆周运动的加速度大小为：<br>$$<br>|a| = \lim_{\Delta t \to 0}{\frac{|\Delta v|}{\Delta t}} = \lim_{\Delta t \to 0}{2v \sin{\frac{\theta}{2}} \cdot \frac{v}{\theta \cdot r}} = \lim_{\Delta t \to 0}{\frac{v^2}{r} \cdot \frac{\sin{\frac{\theta}{2}}}{\frac{\theta}{2}}} = \frac{v^2}{r}<br>$$</p>
+]]></content>
+      <tags>
+        <tag>物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>信息与隐私</title>
     <url>/2021/12/05/%E4%BF%A1%E6%81%AF%E4%B8%8E%E9%9A%90%E7%A7%81/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电脑与手机"><a href="#电脑与手机" class="headerlink" title="电脑与手机"></a>电脑与手机</h1><p>现在国内app甚至网页端基本都有信息流，但有时候真的只是需要查点东西却被无关紧要的信息吸引，网页端还可以用很多办法解决，但手机端几乎是不可能的。再者很多网页对手机浏览器的优化也不够好，也不能进行高级操作。在手机上即使是想主动的找信息也很容易被其他信息干扰，从而导致人们被动的接受信息，我认为这才是现在很多人只会用手机不会用电脑的原因。<span id="more"></span>准确的来说连手机都不会用，举个例子，安卓手机的很多相册app都有密码锁的功能，但是锁上之后还是能看得到照片的，就在文件资源管理器里面找到存放照片的文件夹。还有别以为手机电脑加上密码就安全了，这只是一个系统，外接另一个系统就可以访问硬盘里面的所有资料。举个例子：对于Windows，用u盘弄个pe启动盘，重启电脑进入pe系统可以破解windows密码，访问任何文件夹，甚至删除windows系统然后你的电脑就开不了机了。<br>第二点，在手机上很难接触到小众论坛，因为它们基本上都是网页端的，能做成app的已经不小众了。学会用电脑的一个好处就是接触这些小众论坛避免被信息流淹没自己真正想知道的，要知道人是有求知欲的吖。我并不反对在信息流推荐中获取信息，但你会错过互联网发展中最精彩的部分。</p>
