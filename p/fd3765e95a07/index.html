@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>巴普斯定理、向心力公式 |  小生源雪</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/yx.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-巴普斯定理、向心力公式"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  巴普斯定理、向心力公式
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/p/fd3765e95a07/" class="article-date">
+  <time datetime="2022-10-01T08:59:37.000Z" itemprop="datePublished">2022-10-01</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a> / <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E8%AE%B0%E5%BD%95/">课堂记录</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">890</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">3 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="巴普斯定理"><a href="#巴普斯定理" class="headerlink" title="巴普斯定理"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B7%B4%E6%99%AE%E6%96%AF%E5%AE%9A%E5%BE%8B/3050451">巴普斯定理</a></h1><ol>
+<li><p>运动的树枝所经过的面积等于其长度与它的中点所移动的距离的乘<br>积</p>
+</li>
+<li><p>由平面形状的运动所形成的立体物体的体积，正好等于这个平面形<br>状的面积与其形心运动轨迹长度的乘积</p>
+<span id="more"></span></li>
+</ol>
+<p><img src="/images%5C1.png"></p>
+<p><img src="/images%5C2.png"></p>
+<blockquote>
+<p>以上定义和图片摘自<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26420533/">《度量》</a></p>
+<p>这里的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%BD%A2%E5%BF%83/9915060">形心</a>可以理解为质量均匀的物体的重心</p>
+</blockquote>
+<hr>
+<p>运用此定理，可以证明圆的面积公式，圆锥的体积公式，找到半圆的形心</p>
+<p><img src="/images/3.gif"></p>
+<p><img src="/images/4.gif"></p>
+<p><img src="/images/5.gif"></p>
+<hr>
+<p>不过，有几个问题是我们没有解决的：</p>
+<ul>
+<li>形心的定义是什么</li>
+<li>我们还没有证明此定理，不知道此定理的适用条件</li>
+<li>三角形的形心为什么是三条中线的交点</li>
+</ul>
+<h1 id="匀速圆周运动的向心力公式"><a href="#匀速圆周运动的向心力公式" class="headerlink" title="匀速圆周运动的向心力公式"></a>匀速圆周运动的向心力公式</h1><p><img src="/images%5C6.png"></p>
+<p>我们不妨假设，以A为起点，经过时间 $\Delta t$ 后运动到B点，并且速率恒为 $v$ </p>
+<p>由于速率一定，所以走过的路程 $\overset{\frown}{AB} &#x3D; \Delta t \cdot v$ 。</p>
+<p>又因为 $\overset{\frown}{AB} &#x3D; \theta \cdot r$ ，所以有：</p>
+<p>$$<br>\Delta t &#x3D; \frac{\theta \cdot r}{v}<br>$$</p>
+<p>接着再考虑速度，初速度为 $v_1$ ，末速度为 $v_2$ ，速度的变化量为 $\Delta v$ </p>
+<p>把 $v_1$ 平移到与 $v_2$ 的起点相同，得到 $v_1’$ </p>
+<p>易知 $v_1’$ 和 $v_2$ 的夹角 $\theta’$ 等于 $\theta$ </p>
+<p>由于 $v_1’$ 和 $v_2$ 的长度为 $v$ ，即 $|v_1’| &#x3D; |v_2| &#x3D; v$ </p>
+<p>由几何关系易知：</p>
+<p>$$<br>|\Delta v| &#x3D;2v \sin{\frac{\theta}{2}}<br>$$</p>
+<p>瞬时加速度的定义是：</p>
+<p>$$<br>a &#x3D; \lim_{\Delta t \to 0}{\frac{\Delta v}{\Delta t}}<br>$$</p>
+<p>因为 $\Delta t &#x3D; \frac{\theta \cdot r}{v}$ ，所以当 $\Delta t \to 0$ 时 $\theta \to 0$ ，$\frac{\theta}{2} \to 0$ </p>
+<p>所以匀速圆周运动的加速度大小为：</p>
+<p>$$<br>|a| &#x3D; \lim_{\Delta t \to 0}{\frac{|\Delta v|}{\Delta t}} &#x3D; \lim_{\Delta t \to 0}{2v \sin{\frac{\theta}{2}} \cdot \frac{v}{\theta \cdot r}} &#x3D; \lim_{\Delta t \to 0}{\frac{v^2}{r} \cdot \frac{\sin{\frac{\theta}{2}}}{\frac{\theta}{2}}} &#x3D; \frac{v^2}{r}<br>$$</p>
+<blockquote>
+<p>最后求极限时我们运用了一个高数中很基本的一个极限：</p>
+<p>$$<br>\lim_{x \to 0}{\frac{\sin{x}}{x}} &#x3D; 1<br>$$</p>
+<p>有兴趣可以看看：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av927524364">sinx&#x2F;x的极限为什么是1</a></p>
+</blockquote>
+<h1 id="不太有趣的"><a href="#不太有趣的" class="headerlink" title="不太有趣的"></a>不太有趣的</h1><p><strong><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97">等差数列</a>求和公式：</strong></p>
+<p>$$<br>设数列{a_n}是等差数列，它的第n项为 \ a_n &#x3D; a_1 + (n-1)d<br>$$</p>
+<p>$$<br>则有 S_n &#x3D; a_1 + a_2 +…+ a_n &#x3D; \frac{n(a_1+a_n)}{2}<br>$$</p>
+<hr>
+<blockquote>
+<p>命题: $若a&gt;0且b&gt;0，则a^2&gt;b^2的充分必要条件是a&gt;b$ </p>
+</blockquote>
+<p>证明：</p>
+<p>先证明必要性</p>
+<blockquote>
+<p>因为 $a^2&gt;b^2$ </p>
+<p>所以 $a^2 - b^2 &gt; 0$ </p>
+<p>由平方差公式得：</p>
+<p>$(a+b)(a-b)&gt;0$ </p>
+<p>又因为 $a&gt;0且b&gt;0$ </p>
+<p>所以 $a+b&gt;0$ </p>
+<p>所以 $a-b&gt;0$ </p>
+<p>所以 $a&gt;b$ </p>
+</blockquote>
+<p>再证明充分性</p>
+<blockquote>
+<p>因为 $a&gt;b且a&gt;0,b&gt;0$ </p>
+<p>所以有 $a^2&gt;ab，ab&gt;b^2$ </p>
+<p>所以 $a^2&gt;b^2$ </p>
+</blockquote>
+<hr>
+<p>为什么1+1&#x3D;2？</p>
+<p>参考<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86/6218666">皮亚诺公理</a></p>
+<h1 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h1><ul>
+<li><p>以下情况是否适用巴普斯定理？</p>
+<p><img src="/images%5C7.png"></p>
+<p><img src="/images%5C8.png"></p>
+</li>
+<li><p>下面这个像面包圈的几何体的体积和表面积是多少？</p>
+<p><img src="/images%5C9.png"></p>
+</li>
+<li><p>三角形的三条中线为什么一定交于一点？（三角形的三条高、三条角平分线、三条垂直平分线都是交于一点的吗？为什么？）</p>
+</li>
+<li><p>证明：$若a&lt;0且b&lt;0，则a^2&gt;b^2的充分必要条件是a&lt;b$ </p>
+</li>
+<li><p>证明： $若a&gt;b&gt;c,a+b+c&#x3D;0，则一定有a&gt;0,c&lt;0$</p>
+</li>
+</ul>
+<blockquote>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+</blockquote>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%87%A0%E4%BD%95/" rel="tag">几何</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2022
+        <i class="ri-heart-fill heart_icon"></i> 小生源雪
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/yx.png" alt="小生源雪"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/MathJax.js"></script>
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/config/TeX-AMS-MML_HTMLorMML-full.js"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>

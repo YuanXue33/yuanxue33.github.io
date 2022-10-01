@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>巴普斯定理、向心力公式</title>
+    <url>/p/fd3765e95a07/</url>
+    <content><![CDATA[<h1 id="巴普斯定理"><a href="#巴普斯定理" class="headerlink" title="巴普斯定理"></a><a href="https://baike.baidu.com/item/%E5%B7%B4%E6%99%AE%E6%96%AF%E5%AE%9A%E5%BE%8B/3050451">巴普斯定理</a></h1><ol>
+<li><p>运动的树枝所经过的面积等于其长度与它的中点所移动的距离的乘<br>积</p>
+</li>
+<li><p>由平面形状的运动所形成的立体物体的体积，正好等于这个平面形<br>状的面积与其形心运动轨迹长度的乘积</p>
+<span id="more"></span></li>
+</ol>
+<p><img src="/images%5C1.png"></p>
+<p><img src="/images%5C2.png"></p>
+<blockquote>
+<p>以上定义和图片摘自<a href="https://book.douban.com/subject/26420533/">《度量》</a></p>
+<p>这里的<a href="https://baike.baidu.com/item/%E5%BD%A2%E5%BF%83/9915060">形心</a>可以理解为质量均匀的物体的重心</p>
+</blockquote>
+<hr>
+<p>运用此定理，可以证明圆的面积公式，圆锥的体积公式，找到半圆的形心</p>
+<p><img src="/images/3.gif"></p>
+<p><img src="/images/4.gif"></p>
+<p><img src="/images/5.gif"></p>
+<hr>
+<p>不过，有几个问题是我们没有解决的：</p>
+<ul>
+<li>形心的定义是什么</li>
+<li>我们还没有证明此定理，不知道此定理的适用条件</li>
+<li>三角形的形心为什么是三条中线的交点</li>
+</ul>
+<h1 id="匀速圆周运动的向心力公式"><a href="#匀速圆周运动的向心力公式" class="headerlink" title="匀速圆周运动的向心力公式"></a>匀速圆周运动的向心力公式</h1><p><img src="/images%5C6.png"></p>
+<p>我们不妨假设，以A为起点，经过时间 $\Delta t$ 后运动到B点，并且速率恒为 $v$ </p>
+<p>由于速率一定，所以走过的路程 $\overset{\frown}{AB} &#x3D; \Delta t \cdot v$ 。</p>
+<p>又因为 $\overset{\frown}{AB} &#x3D; \theta \cdot r$ ，所以有：</p>
+<p>$$<br>\Delta t &#x3D; \frac{\theta \cdot r}{v}<br>$$</p>
+<p>接着再考虑速度，初速度为 $v_1$ ，末速度为 $v_2$ ，速度的变化量为 $\Delta v$ </p>
+<p>把 $v_1$ 平移到与 $v_2$ 的起点相同，得到 $v_1’$ </p>
+<p>易知 $v_1’$ 和 $v_2$ 的夹角 $\theta’$ 等于 $\theta$ </p>
+<p>由于 $v_1’$ 和 $v_2$ 的长度为 $v$ ，即 $|v_1’| &#x3D; |v_2| &#x3D; v$ </p>
+<p>由几何关系易知：</p>
+<p>$$<br>|\Delta v| &#x3D;2v \sin{\frac{\theta}{2}}<br>$$</p>
+<p>瞬时加速度的定义是：</p>
+<p>$$<br>a &#x3D; \lim_{\Delta t \to 0}{\frac{\Delta v}{\Delta t}}<br>$$</p>
+<p>因为 $\Delta t &#x3D; \frac{\theta \cdot r}{v}$ ，所以当 $\Delta t \to 0$ 时 $\theta \to 0$ ，$\frac{\theta}{2} \to 0$ </p>
+<p>所以匀速圆周运动的加速度大小为：</p>
+<p>$$<br>|a| &#x3D; \lim_{\Delta t \to 0}{\frac{|\Delta v|}{\Delta t}} &#x3D; \lim_{\Delta t \to 0}{2v \sin{\frac{\theta}{2}} \cdot \frac{v}{\theta \cdot r}} &#x3D; \lim_{\Delta t \to 0}{\frac{v^2}{r} \cdot \frac{\sin{\frac{\theta}{2}}}{\frac{\theta}{2}}} &#x3D; \frac{v^2}{r}<br>$$</p>
+<blockquote>
+<p>最后求极限时我们运用了一个高数中很基本的一个极限：</p>
+<p>$$<br>\lim_{x \to 0}{\frac{\sin{x}}{x}} &#x3D; 1<br>$$</p>
+<p>有兴趣可以看看：<a href="https://www.bilibili.com/video/av927524364">sinx&#x2F;x的极限为什么是1</a></p>
+</blockquote>
+<h1 id="不太有趣的"><a href="#不太有趣的" class="headerlink" title="不太有趣的"></a>不太有趣的</h1><p><strong><a href="https://baike.baidu.com/item/%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97">等差数列</a>求和公式：</strong></p>
+<p>$$<br>设数列{a_n}是等差数列，它的第n项为 \ a_n &#x3D; a_1 + (n-1)d<br>$$</p>
+<p>$$<br>则有 S_n &#x3D; a_1 + a_2 +…+ a_n &#x3D; \frac{n(a_1+a_n)}{2}<br>$$</p>
+<hr>
+<blockquote>
+<p>命题: $若a&gt;0且b&gt;0，则a^2&gt;b^2的充分必要条件是a&gt;b$ </p>
+</blockquote>
+<p>证明：</p>
+<p>先证明必要性</p>
+<blockquote>
+<p>因为 $a^2&gt;b^2$ </p>
+<p>所以 $a^2 - b^2 &gt; 0$ </p>
+<p>由平方差公式得：</p>
+<p>$(a+b)(a-b)&gt;0$ </p>
+<p>又因为 $a&gt;0且b&gt;0$ </p>
+<p>所以 $a+b&gt;0$ </p>
+<p>所以 $a-b&gt;0$ </p>
+<p>所以 $a&gt;b$ </p>
+</blockquote>
+<p>再证明充分性</p>
+<blockquote>
+<p>因为 $a&gt;b且a&gt;0,b&gt;0$ </p>
+<p>所以有 $a^2&gt;ab，ab&gt;b^2$ </p>
+<p>所以 $a^2&gt;b^2$ </p>
+</blockquote>
+<hr>
+<p>为什么1+1&#x3D;2？</p>
+<p>参考<a href="https://baike.baidu.com/item/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86/6218666">皮亚诺公理</a></p>
+<h1 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h1><ul>
+<li><p>以下情况是否适用巴普斯定理？</p>
+<p><img src="/images%5C7.png"></p>
+<p><img src="/images%5C8.png"></p>
+</li>
+<li><p>下面这个像面包圈的几何体的体积和表面积是多少？</p>
+<p><img src="/images%5C9.png"></p>
+</li>
+<li><p>三角形的三条中线为什么一定交于一点？（三角形的三条高、三条角平分线、三条垂直平分线都是交于一点的吗？为什么？）</p>
+</li>
+<li><p>证明：$若a&lt;0且b&lt;0，则a^2&gt;b^2的充分必要条件是a&lt;b$ </p>
+</li>
+<li><p>证明： $若a&gt;b&gt;c,a+b+c&#x3D;0，则一定有a&gt;0,c&lt;0$</p>
+</li>
+</ul>
+<blockquote>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>课堂记录</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>几何</tag>
+      </tags>
+  </entry>
+</search>
