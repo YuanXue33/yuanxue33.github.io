@@ -9,8 +9,8 @@
 <li><p>由平面形状的运动所形成的立体物体的体积，正好等于这个平面形<br>状的面积与其形心运动轨迹长度的乘积</p>
 <span id="more"></span></li>
 </ol>
-<p><img src="/images%5C1.png"></p>
-<p><img src="/images%5C2.png"></p>
+<p><img src="/images/1.png"></p>
+<p><img src="/images/2.png"></p>
 <blockquote>
 <p>以上定义和图片摘自<a href="https://book.douban.com/subject/26420533/">《度量》</a></p>
 <p>这里的<a href="https://baike.baidu.com/item/%E5%BD%A2%E5%BF%83/9915060">形心</a>可以理解为质量均匀的物体的重心</p>
@@ -27,7 +27,7 @@
 <li>我们还没有证明此定理，不知道此定理的适用条件</li>
 <li>三角形的形心为什么是三条中线的交点</li>
 </ul>
-<h1 id="匀速圆周运动的向心力公式"><a href="#匀速圆周运动的向心力公式" class="headerlink" title="匀速圆周运动的向心力公式"></a>匀速圆周运动的向心力公式</h1><p><img src="/images%5C6.png"></p>
+<h1 id="匀速圆周运动的向心力公式"><a href="#匀速圆周运动的向心力公式" class="headerlink" title="匀速圆周运动的向心力公式"></a>匀速圆周运动的向心力公式</h1><p><img src="/images/6.png"></p>
 <p>我们不妨假设，以A为起点，经过时间 $\Delta t$ 后运动到B点，并且速率恒为 $v$ </p>
 <p>由于速率一定，所以走过的路程 $\overset{\frown}{AB} &#x3D; \Delta t \cdot v$ 。</p>
 <p>又因为 $\overset{\frown}{AB} &#x3D; \theta \cdot r$ ，所以有：</p>
@@ -78,11 +78,11 @@
 <p>参考<a href="https://baike.baidu.com/item/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86/6218666">皮亚诺公理</a></p>
 <h1 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h1><ul>
 <li><p>以下情况是否适用巴普斯定理？</p>
-<p><img src="/images%5C7.png"></p>
-<p><img src="/images%5C8.png"></p>
+<p><img src="/images/7.png"></p>
+<p><img src="/images/8.png"></p>
 </li>
 <li><p>下面这个像面包圈的几何体的体积和表面积是多少？</p>
-<p><img src="/images%5C9.png"></p>
+<p><img src="/images/9.png"></p>
 </li>
 <li><p>三角形的三条中线为什么一定交于一点？（三角形的三条高、三条角平分线、三条垂直平分线都是交于一点的吗？为什么？）</p>
 </li>
@@ -92,7 +92,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#110;&#120;&#117;&#x65;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#120;&#115;&#46;&#x79;&#117;&#97;&#x6e;&#120;&#117;&#x65;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#120;&#115;&#46;&#x79;&#117;&#97;&#x6e;&#120;&#117;&#x65;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
 </blockquote>
 ]]></content>
       <categories>
