@@ -147,36 +147,6 @@
       </tags>
   </entry>
   <entry>
-    <title>没讲明白的导数</title>
-    <url>/p/d5abacfad845/</url>
-    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
-<p>证：用数学归纳法</p>
-<span id="more"></span>
-
-<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
-<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
-<p>只要令 $t &#x3D; -q$</p>
-<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
-<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
-<blockquote>
-<p>p.s. f’(x) 是 f(x) 的导函数</p>
-</blockquote>
-<p>（……省略万字）</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
-<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
-<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
-<li>那么在空间直角坐标系中单位球怎么表示？</li>
-<li>在空间直角坐标系中的两点间距离公式是什么？</li>
-</ol>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW和VPN的简单介绍</title>
     <url>/p/cca6c4308ed1/</url>
     <content><![CDATA[<blockquote>
@@ -214,6 +184,36 @@
       </categories>
       <tags>
         <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>没讲明白的导数</title>
+    <url>/p/d5abacfad845/</url>
+    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
+<p>证：用数学归纳法</p>
+<span id="more"></span>
+
+<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
+<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
+<p>只要令 $t &#x3D; -q$</p>
+<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
+<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
+<blockquote>
+<p>p.s. f’(x) 是 f(x) 的导函数</p>
+</blockquote>
+<p>（……省略万字）</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
+<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
+<li>那么在空间直角坐标系中单位球怎么表示？</li>
+<li>在空间直角坐标系中的两点间距离公式是什么？</li>
+</ol>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -459,7 +459,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#110;&#x78;&#x75;&#x65;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#110;&#x78;&#x75;&#x65;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#x6e;&#120;&#117;&#101;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;">&#x78;&#x73;&#x2e;&#x79;&#117;&#x61;&#x6e;&#120;&#117;&#101;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;</a></p>
 </blockquote>
 ]]></content>
       <categories>
