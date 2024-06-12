@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GFW和VPN的简单介绍</title>
+    <url>/p/cca6c4308ed1/</url>
+    <content><![CDATA[<blockquote>
+<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
+</blockquote>
+<span id="more"></span>
+
+<p><img src="/images/75.png"></p>
+<blockquote>
+<p>（网络连接示意图）</p>
+</blockquote>
+<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
+<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
+<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
+<p>IP地址有两个主要的功能：</p>
+<ol>
+<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
+<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
+</ol>
+<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
+<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
+<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
+<p><img src="/images/76.png"></p>
+<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
+<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
+<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
+<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
+<p><img src="/images/77.jpg"></p>
+<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
+<p>这就是VPN翻墙的大致原理。</p>
+<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>级数、排列组合、二项式定理</title>
     <url>/p/c00ff91680d2/</url>
     <content><![CDATA[<h1 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\sum_{k&#x3D;n}^mf(k) &#x3D; f(n)+f(n+1)+…+f(m)$​ </p>
@@ -147,76 +187,6 @@
       </tags>
   </entry>
   <entry>
-    <title>没讲明白的导数</title>
-    <url>/p/d5abacfad845/</url>
-    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
-<p>证：用数学归纳法</p>
-<span id="more"></span>
-
-<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
-<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
-<p>只要令 $t &#x3D; -q$</p>
-<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
-<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
-<blockquote>
-<p>p.s. f’(x) 是 f(x) 的导函数</p>
-</blockquote>
-<p>（……省略万字）</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
-<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
-<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
-<li>那么在空间直角坐标系中单位球怎么表示？</li>
-<li>在空间直角坐标系中的两点间距离公式是什么？</li>
-</ol>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW和VPN的简单介绍</title>
-    <url>/p/cca6c4308ed1/</url>
-    <content><![CDATA[<blockquote>
-<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
-</blockquote>
-<span id="more"></span>
-
-<p><img src="/images/75.png"></p>
-<blockquote>
-<p>（网络连接示意图）</p>
-</blockquote>
-<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
-<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
-<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
-<p>IP地址有两个主要的功能：</p>
-<ol>
-<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
-<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
-</ol>
-<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
-<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
-<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
-<p><img src="/images/76.png"></p>
-<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
-<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
-<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
-<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
-<p><img src="/images/77.jpg"></p>
-<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
-<p>这就是VPN翻墙的大致原理。</p>
-<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>意识和性别的起源</title>
     <url>/p/082e2bfcef09/</url>
     <content><![CDATA[<p>导言:</p>
@@ -237,25 +207,6 @@
       </categories>
       <tags>
         <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021年IMO第一题</title>
-    <url>/p/d12e5ee7c9dc/</url>
-    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
-<span id="more"></span>
-
-<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
-<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
-<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
-<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
-<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -286,39 +237,46 @@
       </tags>
   </entry>
   <entry>
-    <title>极限、符号、开平方、三次方程</title>
-    <url>/p/d563d768cbae/</url>
-    <content><![CDATA[<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><p>$\lim_{n \to \infty} {a^n} &#x3D; \alpha$​ 可以简写为 $a^n \to \alpha (n \to \infty)$ </p>
-<p>等价于它的定义：<br>$$<br>\forall \varepsilon ， \exists M \in N , 当n&gt;M时，\left |\alpha - a^n \right |&lt;\varepsilon<br>$$</p>
+    <title>没讲明白的导数</title>
+    <url>/p/d5abacfad845/</url>
+    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
+<p>证：用数学归纳法</p>
 <span id="more"></span>
 
-<h2 id="函数极限"><a href="#函数极限" class="headerlink" title="函数极限"></a>函数极限</h2><p>$\lim_{x \to x_0} {f(x)} &#x3D; A$ 可以简写为 $f(x) \to A (x \to x_0)$ </p>
-<p>等价于它的定义：<br>$$<br>\forall \varepsilon&gt;0 , \exists \delta&gt;0 , 当 0&lt;\left |x-x_0 \right |&lt;\delta时，有\left |f(x)-A \right |&lt;\varepsilon<br>$$</p>
-<h2 id="一个重要的极限"><a href="#一个重要的极限" class="headerlink" title="一个重要的极限"></a>一个重要的极限</h2><p>首先以O为圆心，OA&#x3D;1为半径做弧$\stackrel\frown{AB}$ ，A点的切线交OB延长线于点D</p>
-<p><img src="/images/67.jpg"></p>
-<p>易知 $BC &#x3D; \sin{x}$  ；  $DA &#x3D; tan{x}$  ；  扇形OAB的面积$S_扇 &#x3D; \frac{x}{2}$ </p>
-<p>又有图可知 $S_{\triangle}{OAB} \le S_{扇} \le S_{\triangle}{OAD}$ </p>
-<p>所以：<br>$$<br>\begin{array}{c}<br>\frac{\sin{x}}{2} \le \frac{x}{2} \le \frac{\tan{x}}{2} \newline<br>\sin(x) \le x \le \tan{x} \newline<br>1 \le \frac{x}{\sin{x}} \le \cos{x} \newline<br>\frac{1}{\cos{x}} \le \frac{\sin{x}}{x} \le 1<br>\end{array}<br>$$<br>又因为 $\lim_{x \to 0}{1}&#x3D;1$  ；  $\lim_{x \to 0}{\frac{1}{\cos{x}}}&#x3D;1$</p>
-<p>根据夹逼定理，有 $\lim_{x \to 0}{\frac{\sin{x}}{x}}&#x3D;1$​ </p>
-<h1 id="一些常见但方便的符号"><a href="#一些常见但方便的符号" class="headerlink" title="一些常见但方便的符号"></a>一些常见但方便的符号</h1><p>（虽然可以打，但好麻烦，直接放图片了）</p>
-<p><img src="/images/68.jpg"></p>
-<h1 id="开平方"><a href="#开平方" class="headerlink" title="开平方"></a>开平方</h1><p><img src="/images/69.jpg"></p>
-<h1 id="三次方程"><a href="#三次方程" class="headerlink" title="三次方程!"></a>三次方程!</h1><p><a href="images/70.jpg"></a></p>
-<p>最后我们可以解出这个特殊方程的解，然后再利用 $x &#x3D; y-\frac{b}{3a}$​ 就可以算出x<br>$$<br>\begin{aligned}&amp;y_1&#x3D;\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;y_2&#x3D;\omega \sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega^2\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;y_3&#x3D;\omega^2\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega \sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;\omega&#x3D;\frac{1}{2}(-1+\sqrt{3}i)\end{aligned}<br>$$</p>
-<h2 id="补充：一元四次方程的解"><a href="#补充：一元四次方程的解" class="headerlink" title="补充：一元四次方程的解"></a>补充：一元四次方程的解</h2><p>对于一元四次方程则更加麻烦：<br>$$<br>\Large a x^{4}+b x^{3}+c x^{2}+d x+e&#x3D;0<br>$$</p>
-<p>记：<br>$$<br>\Large \begin{cases} \Delta_{1}&#x3D;c^{2}-3 b d+12 a e \newline<br>\Delta_{2}&#x3D;2 c^{3}-9 b c d+27 a d^{2}+27 b^{2} e-72 a c e \end{cases}<br>$$<br>并记：<br>$$<br>\Large\Delta&#x3D;\frac{\sqrt[3]{2} \Delta_{1}}{3 a \sqrt[3]{\Delta_{2}+\sqrt{-4 \Delta_{1}^{3}+\Delta_{2}^{2}}}}+\frac{\sqrt[3]{\Delta_{2}+\sqrt{-4 \Delta_{1}^{3}+\Delta_{2}^{2}}}}{3 \sqrt[3]{2} a}<br>$$<br>则方程的解为：<br>$$<br>\Large\begin{cases} x_{1}&#x3D;-\frac{b}{4 a}-\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}-\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta-\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \newline<br>x_{2}&#x3D;-\frac{b}{4 a}-\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}+\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta-\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \newline<br>x_{3}&#x3D;-\frac{b}{4 a}+\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}-\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta+\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta }}} \newline<br>x_{4}&#x3D;-\frac{b}{4 a}+\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}+\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta+\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \end{cases}<br>$$</p>
-<p>可见随着次数的增加，求根公式的复杂度成指数倍增长。（p.s. 五次以上没有通用的求根公式）</p>
+<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
+<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
+<p>只要令 $t &#x3D; -q$</p>
+<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
+<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
 <blockquote>
-<p>以上latex公式来源（自己打会当场去世）：</p>
-<ol>
-<li><a href="https://kexue.fm/archives/26">https://kexue.fm/archives/26</a></li>
-<li><a href="https://daimajiaoliu.com/daima/569e070cad1cc00">https://daimajiaoliu.com/daima/569e070cad1cc00</a></li>
-</ol>
+<p>p.s. f’(x) 是 f(x) 的导函数</p>
 </blockquote>
+<p>（……省略万字）</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
 <h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
-<li>求 $\sum_{n&#x3D;0}^{\infty}{(-1)^nq^n}$​ ，其中 $\left |q \right |&lt;1$​ （p.s. $\sum_{n&#x3D;0}^{\infty}{f(n)} \Longleftrightarrow \lim_{k \to \infty}{\sum_{n&#x3D;0}^{k}{f(n)}}$​​）</li>
-<li>自己再根据上面的步骤计算一遍三次方程的求根公式（不自己算一遍是不会懂得）</li>
+<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
+<li>那么在空间直角坐标系中单位球怎么表示？</li>
+<li>在空间直角坐标系中的两点间距离公式是什么？</li>
 </ol>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021年IMO第一题</title>
+    <url>/p/d12e5ee7c9dc/</url>
+    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
+<span id="more"></span>
+
+<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
+<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
+<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
+<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
+<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
 ]]></content>
       <categories>
         <category>太阳社文章</category>
@@ -459,7 +417,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#121;&#x75;&#97;&#110;&#120;&#x75;&#x65;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#x78;&#x73;&#x2e;&#121;&#x75;&#97;&#110;&#120;&#x75;&#x65;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#120;&#115;&#x2e;&#121;&#117;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#120;&#115;&#x2e;&#121;&#117;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -469,6 +427,48 @@
       <tags>
         <tag>数学</tag>
         <tag>几何</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>极限、符号、开平方、三次方程</title>
+    <url>/p/d563d768cbae/</url>
+    <content><![CDATA[<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><p>$\lim_{n \to \infty} {a^n} &#x3D; \alpha$​ 可以简写为 $a^n \to \alpha (n \to \infty)$ </p>
+<p>等价于它的定义：<br>$$<br>\forall \varepsilon ， \exists M \in N , 当n&gt;M时，\left |\alpha - a^n \right |&lt;\varepsilon<br>$$</p>
+<span id="more"></span>
+
+<h2 id="函数极限"><a href="#函数极限" class="headerlink" title="函数极限"></a>函数极限</h2><p>$\lim_{x \to x_0} {f(x)} &#x3D; A$ 可以简写为 $f(x) \to A (x \to x_0)$ </p>
+<p>等价于它的定义：<br>$$<br>\forall \varepsilon&gt;0 , \exists \delta&gt;0 , 当 0&lt;\left |x-x_0 \right |&lt;\delta时，有\left |f(x)-A \right |&lt;\varepsilon<br>$$</p>
+<h2 id="一个重要的极限"><a href="#一个重要的极限" class="headerlink" title="一个重要的极限"></a>一个重要的极限</h2><p>首先以O为圆心，OA&#x3D;1为半径做弧$\stackrel\frown{AB}$ ，A点的切线交OB延长线于点D</p>
+<p><img src="/images/67.jpg"></p>
+<p>易知 $BC &#x3D; \sin{x}$  ；  $DA &#x3D; tan{x}$  ；  扇形OAB的面积$S_扇 &#x3D; \frac{x}{2}$ </p>
+<p>又有图可知 $S_{\triangle}{OAB} \le S_{扇} \le S_{\triangle}{OAD}$ </p>
+<p>所以：<br>$$<br>\begin{array}{c}<br>\frac{\sin{x}}{2} \le \frac{x}{2} \le \frac{\tan{x}}{2} \newline<br>\sin(x) \le x \le \tan{x} \newline<br>1 \le \frac{x}{\sin{x}} \le \cos{x} \newline<br>\frac{1}{\cos{x}} \le \frac{\sin{x}}{x} \le 1<br>\end{array}<br>$$<br>又因为 $\lim_{x \to 0}{1}&#x3D;1$  ；  $\lim_{x \to 0}{\frac{1}{\cos{x}}}&#x3D;1$</p>
+<p>根据夹逼定理，有 $\lim_{x \to 0}{\frac{\sin{x}}{x}}&#x3D;1$​ </p>
+<h1 id="一些常见但方便的符号"><a href="#一些常见但方便的符号" class="headerlink" title="一些常见但方便的符号"></a>一些常见但方便的符号</h1><p>（虽然可以打，但好麻烦，直接放图片了）</p>
+<p><img src="/images/68.jpg"></p>
+<h1 id="开平方"><a href="#开平方" class="headerlink" title="开平方"></a>开平方</h1><p><img src="/images/69.jpg"></p>
+<h1 id="三次方程"><a href="#三次方程" class="headerlink" title="三次方程!"></a>三次方程!</h1><p><a href="images/70.jpg"></a></p>
+<p>最后我们可以解出这个特殊方程的解，然后再利用 $x &#x3D; y-\frac{b}{3a}$​ 就可以算出x<br>$$<br>\begin{aligned}&amp;y_1&#x3D;\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;y_2&#x3D;\omega \sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega^2\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;y_3&#x3D;\omega^2\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}}+\omega \sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^2+(\frac{p}{3})^3}} \newline<br>&amp;\omega&#x3D;\frac{1}{2}(-1+\sqrt{3}i)\end{aligned}<br>$$</p>
+<h2 id="补充：一元四次方程的解"><a href="#补充：一元四次方程的解" class="headerlink" title="补充：一元四次方程的解"></a>补充：一元四次方程的解</h2><p>对于一元四次方程则更加麻烦：<br>$$<br>\Large a x^{4}+b x^{3}+c x^{2}+d x+e&#x3D;0<br>$$</p>
+<p>记：<br>$$<br>\Large \begin{cases} \Delta_{1}&#x3D;c^{2}-3 b d+12 a e \newline<br>\Delta_{2}&#x3D;2 c^{3}-9 b c d+27 a d^{2}+27 b^{2} e-72 a c e \end{cases}<br>$$<br>并记：<br>$$<br>\Large\Delta&#x3D;\frac{\sqrt[3]{2} \Delta_{1}}{3 a \sqrt[3]{\Delta_{2}+\sqrt{-4 \Delta_{1}^{3}+\Delta_{2}^{2}}}}+\frac{\sqrt[3]{\Delta_{2}+\sqrt{-4 \Delta_{1}^{3}+\Delta_{2}^{2}}}}{3 \sqrt[3]{2} a}<br>$$<br>则方程的解为：<br>$$<br>\Large\begin{cases} x_{1}&#x3D;-\frac{b}{4 a}-\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}-\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta-\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \newline<br>x_{2}&#x3D;-\frac{b}{4 a}-\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}+\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta-\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \newline<br>x_{3}&#x3D;-\frac{b}{4 a}+\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}-\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta+\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta }}} \newline<br>x_{4}&#x3D;-\frac{b}{4 a}+\frac{1}{2} \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}+\frac{1}{2} \sqrt{\frac{b^{2}}{2 a^{2}}-\frac{4 c}{3 a}-\Delta+\frac{-\frac{b^{3}}{a^{3}}+\frac{4 b c}{a^{2}}-\frac{8 d}{a}}{4 \sqrt{\frac{b^{2}}{4 a^{2}}-\frac{2 c}{3 a}+\Delta}}} \end{cases}<br>$$</p>
+<p>可见随着次数的增加，求根公式的复杂度成指数倍增长。（p.s. 五次以上没有通用的求根公式）</p>
+<blockquote>
+<p>以上latex公式来源（自己打会当场去世）：</p>
+<ol>
+<li><a href="https://kexue.fm/archives/26">https://kexue.fm/archives/26</a></li>
+<li><a href="https://daimajiaoliu.com/daima/569e070cad1cc00">https://daimajiaoliu.com/daima/569e070cad1cc00</a></li>
+</ol>
+</blockquote>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
+<li>求 $\sum_{n&#x3D;0}^{\infty}{(-1)^nq^n}$​ ，其中 $\left |q \right |&lt;1$​ （p.s. $\sum_{n&#x3D;0}^{\infty}{f(n)} \Longleftrightarrow \lim_{k \to \infty}{\sum_{n&#x3D;0}^{k}{f(n)}}$​​）</li>
+<li>自己再根据上面的步骤计算一遍三次方程的求根公式（不自己算一遍是不会懂得）</li>
+</ol>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -500,6 +500,93 @@
       <tags>
         <tag>数学</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>新年红包解密</title>
+    <url>/p/42d1c6397479/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p><img src="/images/10.jpg"></p>
+<p><img src="/images/11.jpg"></p>
+<p><em><del>一共有两个人解出来（也没多少人做，也没多难）</del></em></p>
+<hr>
+<p>首先是密文：</p>
+<blockquote>
+<p>..-.&#x2F;.—&#x2F;..-.&#x2F;.–.&#x2F;.–.&#x2F;…-&#x2F;.-..&#x2F;.-.&#x2F;.–.&#x2F;.-..&#x2F;.—&#x2F;.-.&#x2F;–..&#x2F;.</p>
+</blockquote>
+<p>很明显是<a href="https://baike.baidu.com/item/%E6%91%A9%E5%B0%94%E6%96%AF%E7%94%B5%E7%A0%81/1527853">摩斯电码</a>（Morse code），看不出来的话其实复制一段上百度搜也能知道这是摩斯电码。</p>
+<p>下面贴一张摩斯电码的对照表，对着表是可以手动把上面这段电码翻译出来的。</p>
+<p><img src="/images/13.png"></p>
+<p>说到摩斯电码，其实算不上是一种加密方式，更应该说是一种编码方式。为了方便早期的无线点通讯而发明的，是一种明文通讯方式。</p>
+<p>为了节省时间，在网上随便找个在线的摩斯电码的翻译器，就可以完成第一步解码了。</p>
+<p><img src="/images/12.png"></p>
+<p>于是我们得到了一串英文：</p>
+<blockquote>
+<p>FJFPPVLRPLJRZE</p>
+</blockquote>
+<hr>
+<p>因为明文是英语，接下来就是要想办法把这一串凌乱的英文字母转化为可以读通的英语了。</p>
+<p>这里就必须要知道<a href="https://baike.baidu.com/item/%E6%81%BA%E6%92%92%E5%AF%86%E7%A0%81/4905284">恺撒密码</a>了，不然想破脑子也想不出来。</p>
+<p>以下是恺撒密码的简单介绍</p>
+<p><img src="/images/15.png"></p>
+<p>回到这串英文字母，如果它是通过恺撒密码加密的（事实也确实如此），那么我们就需要知道偏移量是多少，也就是字母移动了多少位。</p>
+<p>偏移量其实隐藏在原文中</p>
+<p><img src="/images/14.jpg"></p>
+<p>注意到 <em>密文</em>  和  <em>23</em>  都打了双引号，所以偏移量就是23（嗯，特别的主观，哈哈）</p>
+<p>最后，只要在网上找个在线解密的工具，把密文和偏移量填进去，就可以得到答案了：</p>
+<p><img src="/images/16.png"></p>
+<p><img src="/images/17.jpg"></p>
+<blockquote>
+<p>I MISS YOU SO MUCH</p>
+</blockquote>
+<hr>
+<p><img src="/images/18.jpg"></p>
+<p>我很想念你们，亲爱的初中同学！</p>
+<hr>
+<p><img src="/images/19.jpg"></p>
+<p>还有我可爱的朋友们！</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>密码学</tag>
+        <tag>新年</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>梦乡</title>
+    <url>/p/0546e825fd4c/</url>
+    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
+<p>你为何要哀嚎？</p>
+<p>是在等待着被谁听到吗？</p>
+<span id="more"></span>
+
+<br/>
+
+<p>我听到了，</p>
+<p>愈演愈烈，</p>
+<p>与万千事物共鸣，</p>
+<p>在空谷传响。</p>
+<br/>
+
+<p>动物能听见人的哭声吗？</p>
+<p>动物也有它的哭腔。</p>
+<br/>
+
+<p>几小时的夜能让我安眠？</p>
+<p>就让我温良的进入梦乡。</p>
+<p>若沉默是金，</p>
+<p>那么热闹是孩子嘴里的一颗糖。</p>
+<br/>
+
+<p>为世俗道德标准否弃的人，</p>
+<p>我们无法施爱。</p>
+<p>但上帝爱我们大家。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
   </entry>
   <entry>
     <title>护城河</title>
@@ -534,40 +621,6 @@
 <p>吹促着新生加入到我们的队伍里，</p>
 <p>建造深厚的护城河。 ​​​</p>
 <p>​天与疯狂并存于世。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦乡</title>
-    <url>/p/0546e825fd4c/</url>
-    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
-<p>你为何要哀嚎？</p>
-<p>是在等待着被谁听到吗？</p>
-<span id="more"></span>
-
-<br/>
-
-<p>我听到了，</p>
-<p>愈演愈烈，</p>
-<p>与万千事物共鸣，</p>
-<p>在空谷传响。</p>
-<br/>
-
-<p>动物能听见人的哭声吗？</p>
-<p>动物也有它的哭腔。</p>
-<br/>
-
-<p>几小时的夜能让我安眠？</p>
-<p>就让我温良的进入梦乡。</p>
-<p>若沉默是金，</p>
-<p>那么热闹是孩子嘴里的一颗糖。</p>
-<br/>
-
-<p>为世俗道德标准否弃的人，</p>
-<p>我们无法施爱。</p>
-<p>但上帝爱我们大家。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
@@ -655,29 +708,6 @@
 <p>我带走我们不曾相遇的消息</p>
 <p>留下拂晓时分一片叶的悲哀</p>
 <p>虔诚的等待彗星再次回归</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦</title>
-    <url>/p/fe550c1ab652/</url>
-    <content><![CDATA[<p>睡梦中的思绪，</p>
-<p>照进现实。</p>
-<span id="more"></span>
-
-<p>是时候了，</p>
-<p>让滚轮走上生死台，</p>
-<p>呵，命运在此</p>
-<p>秋在彼岸终结。</p>
-<p>于是山峦的愤怒，</p>
-<p>与河流的忧愁</p>
-<p>便不再有力量。</p>
-<p>就饮酒，食饭，</p>
-<p>倾泻出下一场长眠的夜。</p>
-<p>在沉默蔓延的天际，沉默</p>
-<p>落叶逃遁，尘土徘徊。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
@@ -893,9 +923,33 @@
         <category>旅游</category>
       </categories>
       <tags>
+        <tag>物理</tag>
         <tag>旅游</tag>
-        <tag>湖南，物理</tag>
+        <tag>湖南</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>梦</title>
+    <url>/p/fe550c1ab652/</url>
+    <content><![CDATA[<p>睡梦中的思绪，</p>
+<p>照进现实。</p>
+<span id="more"></span>
+
+<p>是时候了，</p>
+<p>让滚轮走上生死台，</p>
+<p>呵，命运在此</p>
+<p>秋在彼岸终结。</p>
+<p>于是山峦的愤怒，</p>
+<p>与河流的忧愁</p>
+<p>便不再有力量。</p>
+<p>就饮酒，食饭，</p>
+<p>倾泻出下一场长眠的夜。</p>
+<p>在沉默蔓延的天际，沉默</p>
+<p>落叶逃遁，尘土徘徊。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
   </entry>
   <entry>
     <title>你</title>
