@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>GFW和VPN的简单介绍</title>
-    <url>/p/cca6c4308ed1/</url>
-    <content><![CDATA[<blockquote>
-<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
-</blockquote>
-<span id="more"></span>
-
-<p><img src="/images/75.png"></p>
-<blockquote>
-<p>（网络连接示意图）</p>
-</blockquote>
-<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
-<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
-<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
-<p>IP地址有两个主要的功能：</p>
-<ol>
-<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
-<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
-</ol>
-<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
-<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
-<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
-<p><img src="/images/76.png"></p>
-<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
-<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
-<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
-<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
-<p><img src="/images/77.jpg"></p>
-<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
-<p>这就是VPN翻墙的大致原理。</p>
-<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>级数、排列组合、二项式定理</title>
     <url>/p/c00ff91680d2/</url>
     <content><![CDATA[<h1 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\sum_{k&#x3D;n}^mf(k) &#x3D; f(n)+f(n+1)+…+f(m)$​ </p>
@@ -187,53 +147,43 @@
       </tags>
   </entry>
   <entry>
-    <title>意识和性别的起源</title>
-    <url>/p/082e2bfcef09/</url>
-    <content><![CDATA[<p>导言:</p>
-<blockquote>
-<p>生理上决定了我们的性别，而个人也要将自我认同为是这个共同体的一员，拉康揭示了这个过程。</p>
+    <title>GFW和VPN的简单介绍</title>
+    <url>/p/cca6c4308ed1/</url>
+    <content><![CDATA[<blockquote>
+<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
 </blockquote>
-<p>母子共同体（ A ）:母子处于一个一元的整全的状态。“子”作为主体尚未形成自主意识，处于“自足”。这里对应着“完美”“整全”“互补“等关键词。</p>
 <span id="more"></span>
 
-<p>母子分离阶段( <del>A</del> ):“子”的成长及自主意识的形成拉开子与母亲之间的距离“母子不再是一体的，我不完美了”，这里对应着“丧失”“变化””痛苦”等关键词。</p>
-<p>父亲介入阶段( $S_1$&#x3D;S(<del>A</del>) ):子把“完美”的丧失归结于“父亲”的介入。p.s.：这里的父亲只是一个隐喻性质的符号、即使是单亲家庭也会经历这种丧失。（言语，符号）</p>
-<p>弑父阶段:“欲望的辩证法”启动于这个阶段:“子”产生对于“母”的欲望”——成为母亲欲望的对象。为了恢复母子共同体状态孩子开始思考为何自己与母亲会分开，何物使得自己与母亲分开——母亲所欲望的东西是什么？答案是父亲拥有而母亲没有的东西，孩子将其认同为“阳具”——phallus。</p>
-<p>p.s.：这里的phallus并不是Dick或生理意义上的阴茎。实际上它所指称的是“神秘的女性快感”——母亲所欲望的东西。</p>
-<p>前文在标题所提到的符号：“A” 指代的是大它者，也就是那个完美的整全的母子一元关系；“<del>A</del>” 则是 “A” 的丧失</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一些值得思考的理化题目</title>
-    <url>/p/7b7a7c4355cb/</url>
-    <content><![CDATA[<p>题目：</p>
+<p><img src="/images/75.png"></p>
+<blockquote>
+<p>（网络连接示意图）</p>
+</blockquote>
+<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
+<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
+<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
+<p>IP地址有两个主要的功能：</p>
 <ol>
-<li>证明 $\sqrt{2}$ 不是有理数</li>
-<li>证明 $\sqrt{x^2+y^2}+\sqrt{(1-x)^2+y^2}+\sqrt{x^2+(1-y)^2}+\sqrt{(1-x)^2+(1-y)^2} \ge 2\sqrt{2}$ </li>
-<li>用数学归纳法证明逆向归纳法（或称向后归纳法）<ol>
-<li>逆向归纳法：设 $n$ 自然数且设 $P(m)$ 是一个依赖于自然数的性质，它满足条件：只要 $P(m+1)$ 成立则 $P(m)$ 也成立。假设 $P(n)$ 成立，证明对于一切自然数 $m \le n$ ，$P(m)$ 成立</li>
-<li>提示：对n用归纳法</li>
+<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
+<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
 </ol>
-</li>
-<li>证明液体压强公式 $p &#x3D; \rho g h$ （$p$是压强、$\rho$是密度、$g$是重力加速度、$h$是高度）</li>
-<li>证明对于垂直侵入液体的柱体所受浮力等于排开水所受的重力（即阿基米德原理）</li>
-<li>对于一定量的气体，设计实验探究$p$（压强）、$T$（温度）、$V$（体积）之间的关系</li>
-</ol>
-<p>证明：相信你们都会的啦</p>
+<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
+<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
+<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
+<p><img src="/images/76.png"></p>
+<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
+<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
+<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
+<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
+<p><img src="/images/77.jpg"></p>
+<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
+<p>这就是VPN翻墙的大致原理。</p>
+<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
 ]]></content>
       <categories>
         <category>太阳社文章</category>
       </categories>
       <tags>
-        <tag>数学</tag>
-        <tag>物理</tag>
-        <tag>化学</tag>
+        <tag>计算机</tag>
       </tags>
   </entry>
   <entry>
@@ -267,6 +217,29 @@
       </tags>
   </entry>
   <entry>
+    <title>意识和性别的起源</title>
+    <url>/p/082e2bfcef09/</url>
+    <content><![CDATA[<p>导言:</p>
+<blockquote>
+<p>生理上决定了我们的性别，而个人也要将自我认同为是这个共同体的一员，拉康揭示了这个过程。</p>
+</blockquote>
+<p>母子共同体（ A ）:母子处于一个一元的整全的状态。“子”作为主体尚未形成自主意识，处于“自足”。这里对应着“完美”“整全”“互补“等关键词。</p>
+<span id="more"></span>
+
+<p>母子分离阶段( <del>A</del> ):“子”的成长及自主意识的形成拉开子与母亲之间的距离“母子不再是一体的，我不完美了”，这里对应着“丧失”“变化””痛苦”等关键词。</p>
+<p>父亲介入阶段( $S_1$&#x3D;S(<del>A</del>) ):子把“完美”的丧失归结于“父亲”的介入。p.s.：这里的父亲只是一个隐喻性质的符号、即使是单亲家庭也会经历这种丧失。（言语，符号）</p>
+<p>弑父阶段:“欲望的辩证法”启动于这个阶段:“子”产生对于“母”的欲望”——成为母亲欲望的对象。为了恢复母子共同体状态孩子开始思考为何自己与母亲会分开，何物使得自己与母亲分开——母亲所欲望的东西是什么？答案是父亲拥有而母亲没有的东西，孩子将其认同为“阳具”——phallus。</p>
+<p>p.s.：这里的phallus并不是Dick或生理意义上的阴茎。实际上它所指称的是“神秘的女性快感”——母亲所欲望的东西。</p>
+<p>前文在标题所提到的符号：“A” 指代的是大它者，也就是那个完美的整全的母子一元关系；“<del>A</del>” 则是 “A” 的丧失</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2021年IMO第一题</title>
     <url>/p/d12e5ee7c9dc/</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
@@ -283,6 +256,33 @@
       </categories>
       <tags>
         <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些值得思考的理化题目</title>
+    <url>/p/7b7a7c4355cb/</url>
+    <content><![CDATA[<p>题目：</p>
+<ol>
+<li>证明 $\sqrt{2}$ 不是有理数</li>
+<li>证明 $\sqrt{x^2+y^2}+\sqrt{(1-x)^2+y^2}+\sqrt{x^2+(1-y)^2}+\sqrt{(1-x)^2+(1-y)^2} \ge 2\sqrt{2}$ </li>
+<li>用数学归纳法证明逆向归纳法（或称向后归纳法）<ol>
+<li>逆向归纳法：设 $n$ 自然数且设 $P(m)$ 是一个依赖于自然数的性质，它满足条件：只要 $P(m+1)$ 成立则 $P(m)$ 也成立。假设 $P(n)$ 成立，证明对于一切自然数 $m \le n$ ，$P(m)$ 成立</li>
+<li>提示：对n用归纳法</li>
+</ol>
+</li>
+<li>证明液体压强公式 $p &#x3D; \rho g h$ （$p$是压强、$\rho$是密度、$g$是重力加速度、$h$是高度）</li>
+<li>证明对于垂直侵入液体的柱体所受浮力等于排开水所受的重力（即阿基米德原理）</li>
+<li>对于一定量的气体，设计实验探究$p$（压强）、$T$（温度）、$V$（体积）之间的关系</li>
+</ol>
+<p>证明：相信你们都会的啦</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>物理</tag>
+        <tag>化学</tag>
       </tags>
   </entry>
   <entry>
@@ -417,7 +417,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#120;&#115;&#x2e;&#121;&#117;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#120;&#115;&#x2e;&#121;&#117;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#115;&#46;&#121;&#117;&#97;&#x6e;&#120;&#x75;&#x65;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#x78;&#115;&#46;&#121;&#117;&#97;&#x6e;&#120;&#x75;&#x65;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -507,6 +507,8 @@
     <content><![CDATA[<span id="more"></span>
 
 <p><img src="/images/10.jpg"></p>
+<!--more-->
+
 <p><img src="/images/11.jpg"></p>
 <p><em><del>一共有两个人解出来（也没多少人做，也没多难）</del></em></p>
 <hr>
@@ -589,70 +591,6 @@
       </categories>
   </entry>
   <entry>
-    <title>护城河</title>
-    <url>/p/e76ba10f5057/</url>
-    <content><![CDATA[<p>霓虹越过街角，</p>
-<p>虫子睡醒在裸露的故事书。</p>
-<p>新月转动的苍穹之下，</p>
-<p>在这茫茫白昼之中，</p>
-<p>我是什么？</p>
-<span id="more"></span>
-
-<br/>
-
-<p>我不属于夜晚。</p>
-<p>夜的护城河犹如尸体般沉重，</p>
-<p>日光随着窗帘摇曳，</p>
-<p>土地也有着它的高傲。</p>
-<br/>
-
-<p>我期待奇迹的奇迹到来，</p>
-<p>被压缩的时间如箭矢滑过伤口。</p>
-<p>期待着人类社会的解放，</p>
-<p>却不知自身的解放。</p>
-<p>幻想着为爱情献身火海，</p>
-<p>却不曾放弃悠悠固执。</p>
-<br/>
-
-<p>支撑我身体的是下面的血肉腐尸，</p>
-<p>我如何能安下一片心，</p>
-<p>继续前进。</p>
-<p>心与灵魂支离破碎、藕断丝连，</p>
-<p>吹促着新生加入到我们的队伍里，</p>
-<p>建造深厚的护城河。 ​​​</p>
-<p>​天与疯狂并存于世。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>孤独</title>
-    <url>/p/f0d9311bdf8f/</url>
-    <content><![CDATA[<p>人群的嚣鸣​</p>
-<p>积聚在我耳边，​</p>
-<p>三重奏的乐章​</p>
-<p>短暂而欢愉。​​</p>
-<span id="more"></span>
-
-<br/>
-
-<p>躲在房间的角落，</p>
-<p>​注视着内心，​</p>
-<p>时而映照出人群的倒影，​</p>
-<p>时而透析着血的迸涌。​​</p>
-<br/>
-
-<p>我撰写着过去、未来，​</p>
-<p>所有有关我的一切。​</p>
-<p>我的孤独是一座花园，​</p>
-<p>宿莽是这唯一的野草。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
     <title>海的女儿</title>
     <url>/p/a8cba7d520c6/</url>
     <content><![CDATA[<p>哦，亲爱的，海的女儿。</p>
@@ -708,6 +646,70 @@
 <p>我带走我们不曾相遇的消息</p>
 <p>留下拂晓时分一片叶的悲哀</p>
 <p>虔诚的等待彗星再次回归</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>孤独</title>
+    <url>/p/f0d9311bdf8f/</url>
+    <content><![CDATA[<p>人群的嚣鸣​</p>
+<p>积聚在我耳边，​</p>
+<p>三重奏的乐章​</p>
+<p>短暂而欢愉。​​</p>
+<span id="more"></span>
+
+<br/>
+
+<p>躲在房间的角落，</p>
+<p>​注视着内心，​</p>
+<p>时而映照出人群的倒影，​</p>
+<p>时而透析着血的迸涌。​​</p>
+<br/>
+
+<p>我撰写着过去、未来，​</p>
+<p>所有有关我的一切。​</p>
+<p>我的孤独是一座花园，​</p>
+<p>宿莽是这唯一的野草。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>护城河</title>
+    <url>/p/e76ba10f5057/</url>
+    <content><![CDATA[<p>霓虹越过街角，</p>
+<p>虫子睡醒在裸露的故事书。</p>
+<p>新月转动的苍穹之下，</p>
+<p>在这茫茫白昼之中，</p>
+<p>我是什么？</p>
+<span id="more"></span>
+
+<br/>
+
+<p>我不属于夜晚。</p>
+<p>夜的护城河犹如尸体般沉重，</p>
+<p>日光随着窗帘摇曳，</p>
+<p>土地也有着它的高傲。</p>
+<br/>
+
+<p>我期待奇迹的奇迹到来，</p>
+<p>被压缩的时间如箭矢滑过伤口。</p>
+<p>期待着人类社会的解放，</p>
+<p>却不知自身的解放。</p>
+<p>幻想着为爱情献身火海，</p>
+<p>却不曾放弃悠悠固执。</p>
+<br/>
+
+<p>支撑我身体的是下面的血肉腐尸，</p>
+<p>我如何能安下一片心，</p>
+<p>继续前进。</p>
+<p>心与灵魂支离破碎、藕断丝连，</p>
+<p>吹促着新生加入到我们的队伍里，</p>
+<p>建造深厚的护城河。 ​​​</p>
+<p>​天与疯狂并存于世。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
