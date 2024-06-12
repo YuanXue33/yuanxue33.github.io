@@ -147,6 +147,36 @@
       </tags>
   </entry>
   <entry>
+    <title>没讲明白的导数</title>
+    <url>/p/d5abacfad845/</url>
+    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
+<p>证：用数学归纳法</p>
+<span id="more"></span>
+
+<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
+<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
+<p>只要令 $t &#x3D; -q$</p>
+<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
+<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
+<blockquote>
+<p>p.s. f’(x) 是 f(x) 的导函数</p>
+</blockquote>
+<p>（……省略万字）</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
+<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
+<li>那么在空间直角坐标系中单位球怎么表示？</li>
+<li>在空间直角坐标系中的两点间距离公式是什么？</li>
+</ol>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW和VPN的简单介绍</title>
     <url>/p/cca6c4308ed1/</url>
     <content><![CDATA[<blockquote>
@@ -184,36 +214,6 @@
       </categories>
       <tags>
         <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>没讲明白的导数</title>
-    <url>/p/d5abacfad845/</url>
-    <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
-<p>证：用数学归纳法</p>
-<span id="more"></span>
-
-<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
-<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
-<p>只要令 $t &#x3D; -q$</p>
-<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
-<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
-<blockquote>
-<p>p.s. f’(x) 是 f(x) 的导函数</p>
-</blockquote>
-<p>（……省略万字）</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
-<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
-<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
-<li>那么在空间直角坐标系中单位球怎么表示？</li>
-<li>在空间直角坐标系中的两点间距离公式是什么？</li>
-</ol>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -459,7 +459,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#120;&#x73;&#46;&#x79;&#117;&#97;&#110;&#x78;&#117;&#101;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#120;&#x73;&#46;&#x79;&#117;&#97;&#110;&#x78;&#117;&#101;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#x2e;&#121;&#x75;&#97;&#110;&#120;&#x75;&#x65;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#x78;&#x73;&#x2e;&#121;&#x75;&#97;&#110;&#120;&#x75;&#x65;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -661,6 +661,243 @@
       </categories>
   </entry>
   <entry>
+    <title>梦</title>
+    <url>/p/fe550c1ab652/</url>
+    <content><![CDATA[<p>睡梦中的思绪，</p>
+<p>照进现实。</p>
+<span id="more"></span>
+
+<p>是时候了，</p>
+<p>让滚轮走上生死台，</p>
+<p>呵，命运在此</p>
+<p>秋在彼岸终结。</p>
+<p>于是山峦的愤怒，</p>
+<p>与河流的忧愁</p>
+<p>便不再有力量。</p>
+<p>就饮酒，食饭，</p>
+<p>倾泻出下一场长眠的夜。</p>
+<p>在沉默蔓延的天际，沉默</p>
+<p>落叶逃遁，尘土徘徊。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>记湖南旅游的十天</title>
+    <url>/p/5a7db9332759/</url>
+    <content><![CDATA[<h1 id="报到"><a href="#报到" class="headerlink" title="报到"></a>报到</h1><p>几星期前，一个物理竞赛摸底测试取得不错的成绩，便有机会来湖南师范大学的物理竞赛培训班。其实一开始是不想来的，第一要花钱，第二感觉好麻烦，第三感觉没啥用。但最后还是来了Orz。</p>
+<span id="more"></span>
+
+<p><img src="/images/22.png"></p>
+<p>于是呢，就加了我们学校物理竞赛指导老师的微信。之前听过他讲课，虽然只听过几节，每周四的第二节晚修，有一个小时。但是我总是过去问他各种各样的问题。嗯……，蔡老师和我们25班的物理老师可不同，有一次去蔡老师办公室问问题，碰见他在看群论，书架上还有好多数学物理的书籍。是真的看的出来很热爱物理这门学科呢，于是便斗胆向蔡老师借了量子力学和一本物理竞赛教程看，当然了量子力学没看懂，借了一天就还回去了。这样的老师，让我总有许些亲切感。哈哈，教竞赛的老师是有点不同的啦。</p>
+<p><img src="/images/23.jpg"></p>
+<p>然后捏，本来是决定坐高铁过来的，但是抢不到高铁票。我和蔡老师便开车过来（老师也要听课学习一下教学经验，蔡老师听完课还要回老家）。真的好远啊，从上午8点多开到下午5点。上路开始时聊了会天，和老师讲了讲我对数学物理的学习，以及了解了些物理竞赛的东西，然后就一直在听歌玩手机啦。</p>
+<p><img src="/images/20.jpg"></p>
+<blockquote>
+<p>高速上路过的某个服务区</p>
+</blockquote>
+<p><img src="/images/21.jpg"></p>
+<blockquote>
+<p>在服务区吃泡面</p>
+</blockquote>
+<p><img src="/images/25.jpg"></p>
+<blockquote>
+<p>饭卡，湖南师范大学十天体验卡，嘻嘻</p>
+</blockquote>
+<p><img src="/images/24.jpg"></p>
+<blockquote>
+<p>到了之后签到，在宿舍整理东西。不得不说大学宿舍比高中宿舍要舒服多了，床在上面，下面有桌子，还有好多可以放东西的地方。高中宿舍想要学习还得蹲着在床上写东西。</p>
+</blockquote>
+<p><img src="/images/26.jpg"></p>
+<blockquote>
+<p>学校图书馆</p>
+</blockquote>
+<p><img src="/images/27.jpg"></p>
+<blockquote>
+<p>晚上清远一行人出来见个面，有教研员还有几个指导老师，以及10个左右的学生，其中一半都是清中的学生。</p>
+</blockquote>
+<p><img src="/images/28.jpg"></p>
+<p><img src="/images/29.jpg"></p>
+<blockquote>
+<p>第一天晚上出去找吃的</p>
+</blockquote>
+<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><h2 id="杂事"><a href="#杂事" class="headerlink" title="杂事"></a>杂事</h2><p>第一天，7月12号。5点就爬起来了，额……昨晚1点才睡。其实主要是为了出去外面逛逛（真的特别喜欢到处逛逛），沿着湘江走了一段，便回去了，对就是那个湘江北去的湘江。我才发现，这里是毛爷爷写沁园春长沙的地方。湘江中间有橘子洲，每天都有好多游客。</p>
+<p><img src="/images/30.jpg"></p>
+<blockquote>
+<p>湘江的水恒稳的流</p>
+</blockquote>
+<p>8点半就去上课咯，一天下来有三个时段8:30~11:30、14:30~17:30、19:00~21:00，其中晚上是用来自习的。相比于高中，时间还是很宽松的。不过想在上学时出去玩还是不太可能，晚上宿舍11:30就要关门。</p>
+<p><img src="/images/31.jpg"></p>
+<blockquote>
+<p>我们在这里上课，至善，是通往善良的大楼嘛。</p>
+</blockquote>
+<p><img src="/images/32.jpg"></p>
+<blockquote>
+<p>第一天的课，很无聊，在讲啥强基计划、物理学习方法、升学、数据。没意思，特别像每周的班会课，而且还是三小时特长洗脑课，受不了。</p>
+</blockquote>
+<p>嘻嘻，上课可以光明正大的玩手机（所以 接下来的几天都是手机陪我度过的）。</p>
+<p><img src="/images/33.jpg"></p>
+<blockquote>
+<p>第一天还是很努力学习的，在刷题</p>
+</blockquote>
+<p>第二天，才算是开始正式的学习。今天上午是高等数学，速度有些小快，一上午就把同济高数的上册讲完了。不过我已经学过了，所以还在微信上和朋友吐槽这课多么多么简单。</p>
+<p><img src="/images/34.jpg"></p>
+<blockquote>
+<p>下午的力学课</p>
+</blockquote>
+<p><img src="/images/35.jpg"></p>
+<blockquote>
+<p>老师让我们写的心得</p>
+</blockquote>
+<p>第三天，上午还是高数课。啊，他一口气把高数下册讲完了。额……，还没学过，多元微积分、nabla算子。疯狂的在知乎上查资料学习……。这一天有些特别，7月13号。</p>
+<p>可是他为什么不多上几节数学课呢，除了两天上午的高数课之后全是物理课，什么力学、电磁学、热学……真的不是很想听。除了一些概念就是在算积分、解方程。物理竞赛不愧是全国中学生计算能力大赛。数学课我还没好好搞懂呢。</p>
+<p>接下来的课就都是物理课了，已经懒得听了。不会，但就是不想听。</p>
+<h2 id="记录一下学了啥吧"><a href="#记录一下学了啥吧" class="headerlink" title="记录一下学了啥吧"></a>记录一下学了啥吧</h2><h3 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h3><p>$$<br>\int_{0}^{\infty} {e}^{-x^2}dx &#x3D; \sqrt{\pi}<br>$$</p>
+<p>转化成二重积分之后再转为坐标求解：</p>
+<p><a href="https://www.zhihu.com/question/431421150">为什么e的-x的平方的积分等于二分之根号π？</a></p>
+<p>被积函数是个很有趣的函数，形式上和正态分布函数一样</p>
+<p><a href="https://www.bilibili.com/video/BV1wu411W7uU">为什么正态分布里会有一个π？</a></p>
+<h3 id="nabla算子"><a href="#nabla算子" class="headerlink" title="nabla算子"></a>nabla算子</h3><p>略……</p>
+<p>（发现有时候知识是真不进脑子呢）</p>
+<h3 id="极坐标"><a href="#极坐标" class="headerlink" title="极坐标"></a>极坐标</h3><p>参考：<a href="https://zhuanlan.zhihu.com/p/463591300">物理人的平面极坐标系以及运动描述</a></p>
+<p>用极坐标表示运动学可谓一绝，通过两个正交单位向量的求导关系导出了许多直观现象：科氏力、右手螺旋……。</p>
+<p>通过极坐标运动方程来解释行星运动轨道（有心力场）为什么是圆锥曲线，而以此也映照了高中数学圆锥曲线的极坐标表示。</p>
+<h3 id="角动量、力矩"><a href="#角动量、力矩" class="headerlink" title="角动量、力矩"></a>角动量、力矩</h3><p>矢量的叉乘，相信里面一定有深奥的原理</p>
+<h3 id="热学"><a href="#热学" class="headerlink" title="热学"></a>热学</h3><p>算了，学了什么，有似乎没学什么</p>
+<h3 id="电磁学"><a href="#电磁学" class="headerlink" title="电磁学"></a>电磁学</h3><p>一开始给个场强定义就开始疯狂积分，嗯……这怕不是高等数学练习学吧</p>
+<p>最有趣的就是高斯定理了，用精妙的几何法可以推出球面的高斯定理。</p>
+<p><a href="https://www.zhihu.com/question/269387054">如何证明匀质球体对外部质点的引力等效于质心与质点的引力？</a></p>
+<p><a href="https://www.zhihu.com/question/326568092">如何理解高斯公式？</a></p>
+<p>然后就是一些对高斯面极其巧妙的运用搞出了许多几何体的电场。</p>
+<blockquote>
+<p>这高斯定理就像数学中卡瓦列里原理一样，其理论证明都需要用到严格的微积分分析，以此作为基础可以分析许许多多需要微积分的问题，只不过比不上微分运算那样运用的广泛。但不乏是个好用的工具，从数学史观来说，这些定理也是运用于微积分前的。</p>
+</blockquote>
+<p>还有环路定理，对于电磁场的高斯定理和环路定理，似乎马上就要引出麦克斯韦方程组了呢，已经感受到许些伟大的思想了，向量场，场……。</p>
+<p>最后到电容那里就纯粹是应用了，磁场讲的比较少。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>关于物理竞赛的题目，可以说脱了皮就是高中数学题，还要加点高等数学，但其思想方法上只停留在高中数学。做到一道热学题用等比数列（记得湖南22年物理高考的压轴也是等比数列求和，而且还在普物上翻到了原题），一道力学题要用基本不等式……</p>
+<p>不知道我是否真的喜欢竞赛呢。技巧性的东西、功利性的东西，固然需要一些天赋的人，固然需要一些努力的人。而我，自认为，只是对数学有着浓厚的兴趣而已。落到众人口中就变得不可理解了。</p>
+<h1 id="旅游"><a href="#旅游" class="headerlink" title="旅游"></a>旅游</h1><h2 id="和姐姐"><a href="#和姐姐" class="headerlink" title="和姐姐"></a>和姐姐</h2><p>最开心的是7月13号，中午和我姐去吃东西。有6年没见了吧……。可是见面似乎没有陌生的感觉耶，只是时间太短暂了。</p>
+<p><img src="/images/36.jpg"></p>
+<blockquote>
+<p>姐姐给我买好吃的，好开心QWQ</p>
+</blockquote>
+<p>和姐姐一起去麓山南路逛，从师大地铁站走到那，花了半个多小时，有些小热。路边有好多小吃的。</p>
+<p><img src="/images/37.jpg"></p>
+<blockquote>
+<p>吃太多吃不下了</p>
+</blockquote>
+<p>就这样，兜了一中午，最后坐地铁回去了。</p>
+<p>许久许久许久……</p>
+<h2 id="兜兜转转"><a href="#兜兜转转" class="headerlink" title="兜兜转转"></a>兜兜转转</h2><h3 id="7月14号"><a href="#7月14号" class="headerlink" title="7月14号"></a>7月14号</h3><p><img src="/images/38.jpg"></p>
+<blockquote>
+<p>晚修完，坐地铁去后湖</p>
+</blockquote>
+<p><img src="/images/39.jpg"></p>
+<blockquote>
+<p>刚好遇到乐队演出，听到唱《没有理想的人不伤心》，想起学校社团表演时。</p>
+</blockquote>
+<p><img src="/images/40.jpg"></p>
+<p><img src="/images/41.jpg"></p>
+<blockquote>
+<p>这边真的好热闹，也有好多小吃。最后买了臭豆腐和柠檬茶带回宿舍吃。</p>
+</blockquote>
+<h3 id="7月15号"><a href="#7月15号" class="headerlink" title="7月15号"></a>7月15号</h3><p>今天，往另一边走，去橘子洲大桥</p>
+<p><img src="/images/42.jpg"></p>
+<blockquote>
+<p>路过</p>
+</blockquote>
+<p><img src="/images/43.jpg"></p>
+<blockquote>
+<p>妈耶，昨天遇到乐队演出，今天遇到音乐节。不过没有停下来看</p>
+</blockquote>
+<p><img src="/images/44.jpg"></p>
+<blockquote>
+<p>对面的楼好炫丽。在橘子洲大桥上，没有下去橘子洲（找不到在哪里下去）</p>
+</blockquote>
+<p><img src="/images/45.jpg"></p>
+<blockquote>
+<p>这张照片好好看</p>
+</blockquote>
+<p>从晚修9点下课一直逛到11点，宿舍11:30关门，有点小危险。不过晚到11点多的时候大学附近还是比较冷清的，似乎没有啥夜深活呢。一直都在散步，带着耳机，看人来人往，清闲的快乐。</p>
+<p><img src="/images/46.jpg"></p>
+<blockquote>
+<p>宵夜还是要有的</p>
+</blockquote>
+<h3 id="7月18号"><a href="#7月18号" class="headerlink" title="7月18号"></a>7月18号</h3><p>前两三天懒了，也许是散步无聊了，也许是懒了。总之就是没出去，待着玩手机或者学习。</p>
+<p><img src="/images/47.jpg"></p>
+<blockquote>
+<p>昨天中午点了好吃的外卖没吃完(╯︵╰)</p>
+</blockquote>
+<p><img src="/images/48.jpg"></p>
+<blockquote>
+<p>本来是想要出去玩的，结果下暴雨了。球场上还有人在热爱篮球。</p>
+</blockquote>
+<h3 id="7月19号"><a href="#7月19号" class="headerlink" title="7月19号"></a>7月19号</h3><p><img src="/images/49.jpg"></p>
+<blockquote>
+<p>在湖南师范大学逛了逛</p>
+</blockquote>
+<p><img src="/images/50.jpg"></p>
+<blockquote>
+<p>又坐地铁去后湖，发现在地铁站有5g+的手机信号</p>
+</blockquote>
+<p><img src="/images/51.jpg"></p>
+<blockquote>
+<p>后湖夜晚的风景</p>
+</blockquote>
+<p><img src="/images/52.jpg"></p>
+<blockquote>
+<p>今晚的宵夜是炒粉，耶，好久没吃外面街边摊的炒粉了。</p>
+</blockquote>
+<h3 id="7月20号"><a href="#7月20号" class="headerlink" title="7月20号"></a>7月20号</h3><p><img src="/images/53.jpg"></p>
+<p><img src="/images/54.jpg"></p>
+<p><img src="/images/55.jpg"></p>
+<blockquote>
+<p>沿路去教室时拍了几张照</p>
+</blockquote>
+<p>还是夜晚出门，这次在湘江边上逛。感觉晚上真的特别适合散步，呼吸呼吸新鲜的空气，总有些不可描述的意境。</p>
+<p><img src="/images/56.jpg"></p>
+<p><img src="/images/57.jpg"></p>
+<p><img src="/images/58.jpg"></p>
+<p><img src="/images/59.jpg"></p>
+<p><img src="/images/60.jpg"></p>
+<p><img src="/images/61.jpg"></p>
+<blockquote>
+<p>真的好好看</p>
+</blockquote>
+<p><img src="/images/62.jpg"></p>
+<p><img src="/images/63.jpg"></p>
+<blockquote>
+<p>品尝了小姨一定要我来尝尝的茶颜悦色，好好喝</p>
+</blockquote>
+<h3 id="7月21号"><a href="#7月21号" class="headerlink" title="7月21号"></a>7月21号</h3><p>今天就要回去了呢</p>
+<p>中午来湖南大学这边逛了逛</p>
+<p><img src="/images/64.jpg"></p>
+<blockquote>
+<p>毛主席石像</p>
+</blockquote>
+<p><img src="/images/65.jpg"></p>
+<blockquote>
+<p>大热天还是有那么多的游客</p>
+</blockquote>
+<p>然后哩，下午我们就做高铁回去了</p>
+<p><img src="/images/66.jpg"></p>
+<blockquote>
+<p>好久好久没有坐过高铁了，现在的高铁好快啊</p>
+</blockquote>
+<p>今天坐地铁时，把布袋放到安检机器时被发现里面装了剪刀和打火机（习惯带一些小工具）。嗯……太厉害了，我把剪刀拿出来给他们检查，他们用利器测量仪测量了一下看看是不是管制刀具（哈哈，这不就是个正常的剪刀吗，这工作态度我给满分）。然后问我布袋里是不是还有打火机，有几个？我如实回答了有一个。检查了发现没啥问题就放我走了。<br>在高铁站等高铁到处逛时，有个大学生的人过来和我聊天，是卖笔的，额……就是说他要拿学分，锻炼口才巴拉巴拉，要卖出300盒的笔。然后就是推荐我买，额……三块钱一支。总之就是说了很多话，我问了他是哪所大学的，告诉我了，但是我不知道，无法辨别真伪呢。看在他的口水费上，就买了3支笔。可以，这推销做的可以。</p>
+<p>从下午三点做地铁到高铁站，再坐高铁回来，最后做公交回家。到了9点。</p>
+<p>湖南师范大学之旅到此结束</p>
+]]></content>
+      <categories>
+        <category>旅游</category>
+      </categories>
+      <tags>
+        <tag>旅游</tag>
+        <tag>湖南，物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你</title>
     <url>/p/c2baf410370c/</url>
     <content><![CDATA[<p>我将炙热的目光投向你</p>
@@ -692,29 +929,6 @@
 <p>你说</p>
 <p>爱的一面是欢喜</p>
 <p>另一面是忧伤</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦</title>
-    <url>/p/fe550c1ab652/</url>
-    <content><![CDATA[<p>睡梦中的思绪，</p>
-<p>照进现实。</p>
-<span id="more"></span>
-
-<p>是时候了，</p>
-<p>让滚轮走上生死台，</p>
-<p>呵，命运在此</p>
-<p>秋在彼岸终结。</p>
-<p>于是山峦的愤怒，</p>
-<p>与河流的忧愁</p>
-<p>便不再有力量。</p>
-<p>就饮酒，食饭，</p>
-<p>倾泻出下一场长眠的夜。</p>
-<p>在沉默蔓延的天际，沉默</p>
-<p>落叶逃遁，尘土徘徊。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
