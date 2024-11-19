@@ -240,6 +240,25 @@
       </tags>
   </entry>
   <entry>
+    <title>2021年IMO第一题</title>
+    <url>/p/d12e5ee7c9dc/</url>
+    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
+<span id="more"></span>
+
+<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
+<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
+<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
+<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
+<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一些值得思考的理化题目</title>
     <url>/p/7b7a7c4355cb/</url>
     <content><![CDATA[<p>题目：</p>
@@ -264,25 +283,6 @@
         <tag>数学</tag>
         <tag>物理</tag>
         <tag>化学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021年IMO第一题</title>
-    <url>/p/d12e5ee7c9dc/</url>
-    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
-<span id="more"></span>
-
-<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
-<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
-<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
-<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
-<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -459,7 +459,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#x73;&#46;&#x79;&#117;&#97;&#x6e;&#120;&#x75;&#x65;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#x78;&#x73;&#46;&#x79;&#117;&#97;&#x6e;&#120;&#x75;&#x65;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#x6e;&#120;&#117;&#x65;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#x6e;&#120;&#117;&#x65;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -469,6 +469,36 @@
       <tags>
         <tag>数学</tag>
         <tag>几何</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高中向量</title>
+    <url>/p/16c94bfc4359/</url>
+    <content><![CDATA[<h1 id="若F是域，则应满足以下性质："><a href="#若F是域，则应满足以下性质：" class="headerlink" title="若F是域，则应满足以下性质："></a>若F是域，则应满足以下性质：</h1><ol>
+<li>交换性：对所有 $\alpha ,\beta \in F$ 有 $\alpha +\beta &#x3D; \beta +\alpha , \alpha \beta &#x3D; \beta \alpha$ </li>
+<li>结合性：对所有 $\alpha , \beta , \gamma \in F$ ，有 $(\alpha +\beta) + \gamma &#x3D; \alpha + (\beta + \gamma) , (\alpha \beta) \gamma &#x3D; \alpha (\beta \gamma)$ </li>
+<li>单位元：对所有 $\gamma \in F$ ，有 $\gamma +0 &#x3D; \gamma$ ，$\gamma \cdot 1 &#x3D; 1$</li>
+<li>加法逆元：对每个 $\alpha \in F$ 都存在唯一的 $\beta \in F$ 使得 $\alpha + \beta &#x3D; 0$ </li>
+<li>乘法逆元：对每个 $\alpha \in F , a \ne 0$ 都存在唯一的 $\beta \in F$ 使得 $\alpha \beta &#x3D; 1$ </li>
+<li>分配性质：对所有 $\gamma , \alpha , \beta \in F$ 都有 $\gamma (\alpha + \beta) &#x3D; \gamma \alpha + \gamma \beta$</li>
+</ol>
+<span id="more"></span>
+
+<h1 id="线性相关（无关）"><a href="#线性相关（无关）" class="headerlink" title="线性相关（无关）"></a>线性相关（无关）</h1><p>规定所有平面向量构成的集合记为V</p>
+<p>定义：若 $\alpha , \beta \in V , a \ne 0$ ，存在 $k \in R$ ，使得 $\beta &#x3D; k \alpha$ ，则称$\alpha$和$\beta$线性相关。若不存在，线性无关。</p>
+<h1 id="数量积（点乘）"><a href="#数量积（点乘）" class="headerlink" title="数量积（点乘）"></a>数量积（点乘）</h1><p>定义：$\alpha \Longleftrightarrow (a,b)$ 即，向量和有序数对是同构的</p>
+<p>定义：$\alpha , \beta \in V$ 且 $\alpha &#x3D; (a,b) , \beta &#x3D; (c,d)$ ，则 $\alpha \cdot \beta &#x3D; ac + bd$ （即横坐标之积与纵坐标之积的和）</p>
+<p>定义：$|\alpha| &#x3D; \sqrt{a^2 + b^2}$</p>
+<p>易证明：$\alpha \cdot \beta &#x3D; |\alpha| \cdot |\beta| \cdot \cos{\theta}$ （其中，$\theta$ 是 $\alpha$ 和 $\beta$ 的夹角）</p>
+<p>p.s. 另外，又因为课本上通过 $\alpha \cdot \beta &#x3D; |\alpha| \cdot |\beta| \cdot \cos{\theta}$ 推出  $\alpha \cdot \beta &#x3D; ac + bd$ 的关系，所以这两个定义是等价的关系</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>名词：柯西不等式、正交、复数、复数三角表示、复数三角表示的乘法</p>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><p>高中数学书必修二54页第19题</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
@@ -557,6 +587,40 @@
 <p>吹促着新生加入到我们的队伍里，</p>
 <p>建造深厚的护城河。 ​​​</p>
 <p>​天与疯狂并存于世。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦乡</title>
+    <url>/p/0546e825fd4c/</url>
+    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
+<p>你为何要哀嚎？</p>
+<p>是在等待着被谁听到吗？</p>
+<span id="more"></span>
+
+<br/>
+
+<p>我听到了，</p>
+<p>愈演愈烈，</p>
+<p>与万千事物共鸣，</p>
+<p>在空谷传响。</p>
+<br/>
+
+<p>动物能听见人的哭声吗？</p>
+<p>动物也有它的哭腔。</p>
+<br/>
+
+<p>几小时的夜能让我安眠？</p>
+<p>就让我温良的进入梦乡。</p>
+<p>若沉默是金，</p>
+<p>那么热闹是孩子嘴里的一颗糖。</p>
+<br/>
+
+<p>为世俗道德标准否弃的人，</p>
+<p>我们无法施爱。</p>
+<p>但上帝爱我们大家。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
@@ -836,6 +900,35 @@
       </tags>
   </entry>
   <entry>
+    <title>圆</title>
+    <url>/p/9899c4c2be8d/</url>
+    <content><![CDATA[<p>穿越十二星座的旅途周而复始</p>
+<p>泛灰的同心圆一圈圈荡漾舟中</p>
+<p>伫立在无人的街角、地球的边界</p>
+<p>记忆无意隐秘在墙角</p>
+<p>黄昏吞没缘的循环</p>
+<span id="more"></span>
+
+<br/>
+
+<p>现象与意识分崩离析</p>
+<p>大地冲破荒诞的一瞬</p>
+<p>太阳在苍穹之上坠落</p>
+<p>泛舟繁星映带左右</p>
+<p>神明也不会知晓月的阴晴圆缺</p>
+<br/>
+
+<p>审判的十字架已降落</p>
+<p>余下的七十六个星座被南北分割</p>
+<p>我带走我们不曾相遇的消息</p>
+<p>留下拂晓时分一片叶的悲哀</p>
+<p>虔诚的等待彗星再次回归</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
     <title>梦</title>
     <url>/p/fe550c1ab652/</url>
     <content><![CDATA[<p>睡梦中的思绪，</p>
@@ -896,6 +989,16 @@
       </categories>
   </entry>
   <entry>
+    <title>10月高数题集</title>
+    <url>/p/9047f6abe9f1/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>$$<br>\lim_{x\to1}{\frac{1}{1-x}-\frac{3}{1-x^3}} &#x3D; \lim_{x\to1}{\frac{1+x+x^2-3}{1-x^3}} &#x3D; \lim_{x\to1}{\frac{(x-1)(x+2)}{(1-x)(1+x+x^2)}}<br>$$</p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>雨</title>
     <url>/p/6501ae53f960/</url>
     <content><![CDATA[<p>雨悄悄地来，</p>
@@ -930,101 +1033,8 @@
       </categories>
   </entry>
   <entry>
-    <title>梦乡</title>
-    <url>/p/0546e825fd4c/</url>
-    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
-<p>你为何要哀嚎？</p>
-<p>是在等待着被谁听到吗？</p>
-<span id="more"></span>
-
-<br/>
-
-<p>我听到了，</p>
-<p>愈演愈烈，</p>
-<p>与万千事物共鸣，</p>
-<p>在空谷传响。</p>
-<br/>
-
-<p>动物能听见人的哭声吗？</p>
-<p>动物也有它的哭腔。</p>
-<br/>
-
-<p>几小时的夜能让我安眠？</p>
-<p>就让我温良的进入梦乡。</p>
-<p>若沉默是金，</p>
-<p>那么热闹是孩子嘴里的一颗糖。</p>
-<br/>
-
-<p>为世俗道德标准否弃的人，</p>
-<p>我们无法施爱。</p>
-<p>但上帝爱我们大家。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>高中向量</title>
-    <url>/p/16c94bfc4359/</url>
-    <content><![CDATA[<h1 id="若F是域，则应满足以下性质："><a href="#若F是域，则应满足以下性质：" class="headerlink" title="若F是域，则应满足以下性质："></a>若F是域，则应满足以下性质：</h1><ol>
-<li>交换性：对所有 $\alpha ,\beta \in F$ 有 $\alpha +\beta &#x3D; \beta +\alpha , \alpha \beta &#x3D; \beta \alpha$ </li>
-<li>结合性：对所有 $\alpha , \beta , \gamma \in F$ ，有 $(\alpha +\beta) + \gamma &#x3D; \alpha + (\beta + \gamma) , (\alpha \beta) \gamma &#x3D; \alpha (\beta \gamma)$ </li>
-<li>单位元：对所有 $\gamma \in F$ ，有 $\gamma +0 &#x3D; \gamma$ ，$\gamma \cdot 1 &#x3D; 1$</li>
-<li>加法逆元：对每个 $\alpha \in F$ 都存在唯一的 $\beta \in F$ 使得 $\alpha + \beta &#x3D; 0$ </li>
-<li>乘法逆元：对每个 $\alpha \in F , a \ne 0$ 都存在唯一的 $\beta \in F$ 使得 $\alpha \beta &#x3D; 1$ </li>
-<li>分配性质：对所有 $\gamma , \alpha , \beta \in F$ 都有 $\gamma (\alpha + \beta) &#x3D; \gamma \alpha + \gamma \beta$</li>
-</ol>
-<span id="more"></span>
-
-<h1 id="线性相关（无关）"><a href="#线性相关（无关）" class="headerlink" title="线性相关（无关）"></a>线性相关（无关）</h1><p>规定所有平面向量构成的集合记为V</p>
-<p>定义：若 $\alpha , \beta \in V , a \ne 0$ ，存在 $k \in R$ ，使得 $\beta &#x3D; k \alpha$ ，则称$\alpha$和$\beta$线性相关。若不存在，线性无关。</p>
-<h1 id="数量积（点乘）"><a href="#数量积（点乘）" class="headerlink" title="数量积（点乘）"></a>数量积（点乘）</h1><p>定义：$\alpha \Longleftrightarrow (a,b)$ 即，向量和有序数对是同构的</p>
-<p>定义：$\alpha , \beta \in V$ 且 $\alpha &#x3D; (a,b) , \beta &#x3D; (c,d)$ ，则 $\alpha \cdot \beta &#x3D; ac + bd$ （即横坐标之积与纵坐标之积的和）</p>
-<p>定义：$|\alpha| &#x3D; \sqrt{a^2 + b^2}$</p>
-<p>易证明：$\alpha \cdot \beta &#x3D; |\alpha| \cdot |\beta| \cdot \cos{\theta}$ （其中，$\theta$ 是 $\alpha$ 和 $\beta$ 的夹角）</p>
-<p>p.s. 另外，又因为课本上通过 $\alpha \cdot \beta &#x3D; |\alpha| \cdot |\beta| \cdot \cos{\theta}$ 推出  $\alpha \cdot \beta &#x3D; ac + bd$ 的关系，所以这两个定义是等价的关系</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>名词：柯西不等式、正交、复数、复数三角表示、复数三角表示的乘法</p>
-<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><p>高中数学书必修二54页第19题</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>圆</title>
-    <url>/p/9899c4c2be8d/</url>
-    <content><![CDATA[<p>穿越十二星座的旅途周而复始</p>
-<p>泛灰的同心圆一圈圈荡漾舟中</p>
-<p>伫立在无人的街角、地球的边界</p>
-<p>记忆无意隐秘在墙角</p>
-<p>黄昏吞没缘的循环</p>
-<span id="more"></span>
-
-<br/>
-
-<p>现象与意识分崩离析</p>
-<p>大地冲破荒诞的一瞬</p>
-<p>太阳在苍穹之上坠落</p>
-<p>泛舟繁星映带左右</p>
-<p>神明也不会知晓月的阴晴圆缺</p>
-<br/>
-
-<p>审判的十字架已降落</p>
-<p>余下的七十六个星座被南北分割</p>
-<p>我带走我们不曾相遇的消息</p>
-<p>留下拂晓时分一片叶的悲哀</p>
-<p>虔诚的等待彗星再次回归</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
     <title>日子</title>
-    <url>/p/169609594b3f/</url>
+    <url>/p/2e2c84640b11/</url>
     <content><![CDATA[<p>在日子沉醉的风浪里，</p>
 <p>眼睛是轮胎的躯体，</p>
 <p>嵌进单车的生活中，骑骑走走。</p>
