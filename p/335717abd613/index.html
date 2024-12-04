@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>没讲明白的导数 |  小生源雪</title>
+      <title>级数、排列组合、二项式定理 |  小生源雪</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/yx32.png" />
@@ -57,7 +57,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-12-没讲明白的导数"
+  id="post-级数、排列组合、二项式定理"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -68,7 +68,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  没讲明白的导数
+  级数、排列组合、二项式定理
 </h1>
  
 
@@ -76,8 +76,8 @@
     </header>
      
     <div class="article-meta">
-      <a href="/p/d5abacfad845/" class="article-date">
-  <time datetime="2022-01-12T05:00:00.000Z" itemprop="datePublished">2022-01-12</time>
+      <a href="/p/335717abd613/" class="article-date">
+  <time datetime="2021-12-22T05:00:00.000Z" itemprop="datePublished">2021-12-22</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%A4%AA%E9%98%B3%E7%A4%BE%E6%96%87%E7%AB%A0/">太阳社文章</a>
@@ -88,7 +88,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">319</span>
+            <span class="post-count">969</span>
         </span>
     </span>
 
@@ -97,7 +97,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -112,24 +112,56 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
-<p>证：用数学归纳法</p>
+  <h1 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\sum_{k&#x3D;n}^mf(k) &#x3D; f(n)+f(n+1)+…+f(m)$​ </p>
+<p>其中 $m,n \in Z $​ 且 $ n \le m$​​ </p>
+<p>$\prod_{k&#x3D;n}^{m}{f(k)} &#x3D; f(n) \times f(n+1) \times … \times f(m)$​​​​​ </p>
+<p>其中 $m,n \in Z $​​ 且 $ n \le m$​​​​​​ ​</p>
 <span id="more"></span>
 
-<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
-<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
-<p>只要令 $t &#x3D; -q$</p>
-<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
-<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
+<h1 id="排列组合"><a href="#排列组合" class="headerlink" title="排列组合"></a>排列组合</h1><h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><p>排列：从n个元素中选m个元素排列的情况数记为$A_{n}^{m}$​​ ​</p>
+<p>组合：从n个元素中选m个元素组合的情况数$C_{n}^{m}$ </p>
 <blockquote>
-<p>p.s. f’(x) 是 f(x) 的导函数</p>
+<p>p.s. </p>
+<p>$n! &#x3D; 1 \times 2 \times 3 \times … \times n$​</p>
+<p>规定： $0! &#x3D; 1$​</p>
 </blockquote>
-<p>（……省略万字）</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><blockquote>
+<p>$A_{n}^{m} &#x3D; \frac{n!}{(n-m)!}$</p>
+<p>$C_{n}^{m} &#x3D; \frac{A_{n}^{m}}{A_{m}^{m}} &#x3D; \frac{n!}{n!(n-m)!}$</p>
+<p>$C_{n}^{m} &#x3D; C_{n}^{n-m}$  ​</p>
+</blockquote>
+<h2 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h2><blockquote>
+<p>$$<br>(a+b)^n &#x3D; \sum_{k&#x3D;0}^{n}{C_{n}^{k}a^{n-k}b^{k}} &#x3D; a^n + C_{n}^{1}a^{n-1}b + C_{n}^{2}a^{n-2}b^2 + … + C_{n}^{n-1}ab^{n-1} + b^n<br>$$</p>
+</blockquote>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>对于排列，相当于有m个班级，要从n个老师中选m个分配到m个班级做班主任的情况数</p>
+<p>对于组合，相当于有m个班级，要在n个老师中选m个做班主任的情况数</p>
+<p>现实中往往先选好m个老师为班主任，在随机分配到m个班级，可以看出组合只做了第一步，而排列时两步一起做了。</p>
+<p>我们可以这么思考排列数，先选择1班的班主任，共有n个老师可供选择，在选择2班的班主任还剩n-1个老师可供选择，以此类推，所以总的情况数就是<br>$$<br>n \times (n-1) \times (n-2) \times … \times (n-m+1) &#x3D; \frac{n!}{(n-m)!}<br>$$<br> 所以 $A_{n}^{m} &#x3D; \frac{n!}{(n-m)!}$​</p>
+<p>组合可以在排列的基础上思考，排列时完成两步，而第一步对应的是组合数（先把有资格当班主任的老师跳出来，不分次序），第二步就是对这m个竞选出的班主任进行排列（即分配到每个班级中），也就是全排列$A_{m}^{m})$​ 。所以第一步乘以第二步就对应着排列数，即</p>
+<blockquote>
+<p>$C_{n}^{m} \times A_{m}^{m} &#x3D; A_{n}^{m}$​​ </p>
+<p>所以 $C_{n}^{m} &#x3D; \frac{A_{n}^{m}}{A_{m}^{m}} &#x3D; \frac{\frac{n!}{(n-m)!}}{\frac{m!}{(m-m)!}} &#x3D; \frac{n!}{m!(n-m)!}$​​ </p>
+</blockquote>
+<p>还有，从n个中选m个形成组合，剩下的n-m个必然也形成组合，所以 $C_{n}^{m} &#x3D; C_{n}^{n-m}$</p>
+<p>对于二项式定理，观察：</p>
+<blockquote>
+<p>$$<br>(a+b)(a+b)(a+b) &#x3D; a^3 + a^2b + a^2b + ab^2 + a^2b +ab^2 +ab^2 + b^3<br>$$</p>
+</blockquote>
+<p>我们可以看成从每个因子中选取a和b相乘，然后再相加，我们可以把乘积相同的合并在一起，所以我们这样做：</p>
+<blockquote>
+<p>先抽取 n个a，0个b，这只有一种情况，即 $C_{n}^{0}$​​ ，再抽 n-1个a，1个b，情况数可以看成从n个中选1个为b的组合数 $C_{n}^{1}$ ，再抽 n-2个a，2个b，情况数可以看出从n个中选2个b组合，即$C_{n}^{2}$，所以有：（这是抽取法）</p>
+<p>$$<br>(a+b)^n &#x3D; a^n + C_{n}^{1}a^{n-1}b + C_{n}^{2}a^{n-2}b^2 + … + C_{n}^{n-1}ab^{n-1} + b^n<br>$$</p>
+</blockquote>
+<p>或者可以这样思考：</p>
+<p><img src="/images/71.jpg"></p>
+<p>所以我们很容易通过帕斯卡三角形推算二项式的项的系数，而不用计算复杂的组合数，关于级数和排列组合的公式还有很多，需要的时候再学（因为我也不会）。而且二项式定理可以将n推广到任意实数乃至复数</p>
 <h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
-<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
-<li>那么在空间直角坐标系中单位球怎么表示？</li>
-<li>在空间直角坐标系中的两点间距离公式是什么？</li>
+<li><p>如何定义 $\sum_{k&#x3D;a}^{\infty}{f(k)}$，即上标为无穷的级数。（提示：转化为数列的极限）</p>
+</li>
+<li><p>设有N件产品，其中D件次品，从中任取n件，问其中恰有k（$k \le D$）件次品的概率</p>
+</li>
+<li><p>用级数表示 $(a+b+c)^n$ （提示：用抽取法，先固定一个数（例如a）的选取个数不变）</p>
+</li>
 </ol>
  
       <!-- reward -->
@@ -149,20 +181,15 @@
    
   <nav class="article-nav">
     
-      <a href="/p/0427e089d3a6/" class="article-nav-link">
+      <a href="/p/d2954b892c07/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            心理学效应
+            关于哲学的一些有趣的命题的思考
           
         </div>
       </a>
     
-    
-      <a href="/p/d563d768cbae/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">极限、符号、开平方、三次方程</div>
-      </a>
     
   </nav>
 

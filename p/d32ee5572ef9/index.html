@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>2021年IMO第一题 |  小生源雪</title>
+      <title>没讲明白的导数 |  小生源雪</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/yx32.png" />
@@ -57,7 +57,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-15-2021年IMO第一题"
+  id="post-没讲明白的导数"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -68,7 +68,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  2021年IMO第一题
+  没讲明白的导数
 </h1>
  
 
@@ -76,8 +76,8 @@
     </header>
      
     <div class="article-meta">
-      <a href="/p/d12e5ee7c9dc/" class="article-date">
-  <time datetime="2022-02-15T05:00:00.000Z" itemprop="datePublished">2022-02-15</time>
+      <a href="/p/d32ee5572ef9/" class="article-date">
+  <time datetime="2022-01-12T05:00:00.000Z" itemprop="datePublished">2022-01-12</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%A4%AA%E9%98%B3%E7%A4%BE%E6%96%87%E7%AB%A0/">太阳社文章</a>
@@ -88,7 +88,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">524</span>
+            <span class="post-count">319</span>
         </span>
     </span>
 
@@ -97,7 +97,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">1 分钟</span>
         </span>
     </span>
 </div>
@@ -112,14 +112,25 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
+  <h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
+<p>证：用数学归纳法</p>
 <span id="more"></span>
 
-<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
-<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
-<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
-<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
-<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
+<h2 id="等比级数"><a href="#等比级数" class="headerlink" title="等比级数"></a>等比级数</h2><p>$$<br>\begin{array}{c}<br>\sum_{k&#x3D;0}^{\infty}{q^k} &#x3D; \lim_{n \to \infty}{\sum_{k&#x3D;0}^{n}{q^k}} &#x3D; 1+q+q^2+… &#x3D; \lim_{n \to \infty}{\frac{1-q^{n+1}}{1-q}} &#x3D; \frac{1}{1-q} \newline<br>其中\left |q \right | &lt; 1<br>\end{array}<br>$$</p>
+<h2 id="昨天作业"><a href="#昨天作业" class="headerlink" title="昨天作业"></a>昨天作业</h2><p>求  $\sum_{k&#x3D;0}^{\infty}{(-1)^kq^k}$ </p>
+<p>只要令 $t &#x3D; -q$</p>
+<p>则有：<br>$$<br>原式 &#x3D; \sum_{k&#x3D;0}^{\infty}{t^k} &#x3D; \frac{1}{1-t} &#x3D; \frac{1}{1+q}<br>$$</p>
+<h1 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h1><p>定义：<br>$$<br>f’(x) &#x3D; \lim_{h \to 0}{\frac{f(x+h)-f(x)}{h}}<br>$$</p>
+<blockquote>
+<p>p.s. f’(x) 是 f(x) 的导函数</p>
+</blockquote>
+<p>（……省略万字）</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>今天讲的微积分概念不必去想了，一是因为我没学扎实没提前准备，导致连我自己都不知道再讲什么；二是起点稍高，一些基础我还没讲就一下步了（主要是有许多公式我忘记怎么推了）。不过下学期必然要把整个微积分体系讲清的（从零开始）</p>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><ol>
+<li>为什么 $x^2 + y^2 &#x3D; 1$ 表示的是单位圆？</li>
+<li>那么在空间直角坐标系中单位球怎么表示？</li>
+<li>在空间直角坐标系中的两点间距离公式是什么？</li>
+</ol>
  
       <!-- reward -->
       
@@ -138,19 +149,19 @@
    
   <nav class="article-nav">
     
-      <a href="/p/16c94bfc4359/" class="article-nav-link">
+      <a href="/p/1bdb1ff9139d/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            高中向量
+            心理学效应
           
         </div>
       </a>
     
     
-      <a href="/p/082e2bfcef09/" class="article-nav-link">
+      <a href="/p/9c06977b0683/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">意识和性别的起源</div>
+        <div class="article-nav-title">极限、符号、开平方、三次方程</div>
       </a>
     
   </nav>

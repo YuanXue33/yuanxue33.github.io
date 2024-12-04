@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GFW和VPN的简单介绍</title>
+    <url>/p/c9ff24cd8420/</url>
+    <content><![CDATA[<blockquote>
+<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
+</blockquote>
+<span id="more"></span>
+
+<p><img src="/images/75.png"></p>
+<blockquote>
+<p>（网络连接示意图）</p>
+</blockquote>
+<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
+<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
+<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
+<p>IP地址有两个主要的功能：</p>
+<ol>
+<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
+<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
+</ol>
+<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
+<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
+<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
+<p><img src="/images/76.png"></p>
+<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
+<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
+<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
+<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
+<p><img src="/images/77.jpg"></p>
+<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
+<p>这就是VPN翻墙的大致原理。</p>
+<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>级数、排列组合、二项式定理</title>
-    <url>/p/c00ff91680d2/</url>
+    <url>/p/335717abd613/</url>
     <content><![CDATA[<h1 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\sum_{k&#x3D;n}^mf(k) &#x3D; f(n)+f(n+1)+…+f(m)$​ </p>
 <p>其中 $m,n \in Z $​ 且 $ n \le m$​​ </p>
 <p>$\prod_{k&#x3D;n}^{m}{f(k)} &#x3D; f(n) \times f(n+1) \times … \times f(m)$​​​​​ </p>
@@ -64,7 +104,7 @@
   </entry>
   <entry>
     <title>关于哲学的一些有趣的命题的思考</title>
-    <url>/p/bfcb3e9625c2/</url>
+    <url>/p/d2954b892c07/</url>
     <content><![CDATA[<h1 id="笛卡尔及庄周的场域论路径"><a href="#笛卡尔及庄周的场域论路径" class="headerlink" title="笛卡尔及庄周的场域论路径"></a>笛卡尔及庄周的场域论路径</h1><h2 id="笛卡尔：如果一切都是假的"><a href="#笛卡尔：如果一切都是假的" class="headerlink" title="笛卡尔：如果一切都是假的"></a>笛卡尔：如果一切都是假的</h2><p>A：一切都是假的</p>
 <p>B：除非知道真，否则无法讨论假</p>
 <p>C：所以“真”是超越假的例外</p>
@@ -147,48 +187,31 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW和VPN的简单介绍</title>
-    <url>/p/cca6c4308ed1/</url>
-    <content><![CDATA[<blockquote>
-<p>任何需要使用互联网的计算机必须通过某种方式与互联网进行连接。互联网接入技术的发展非常迅速，带宽由最初的14.4<a href="https://zh.wikipedia.org/wiki/Kbps">Kbps</a>发展到目前的100<a href="https://zh.wikipedia.org/wiki/Mbps">Mbps</a>甚至1<a href="https://zh.wikipedia.org/wiki/1Gbps%E4%BB%A5%E5%A4%AA%E7%BD%91">Gbps</a>带宽，接入方式也由过去单一的<a href="https://zh.wikipedia.org/wiki/%E6%92%A5%E8%99%9F%E9%80%A3%E7%B7%9A">电话拨号</a>方式，发展成现在多样的有线和无线接入方式，接入终端也开始朝向移动设备发展。并且更新更快的接入方式仍在继续地被研究和开发。</p>
+    <title>意识和性别的起源</title>
+    <url>/p/251073ba2e7b/</url>
+    <content><![CDATA[<p>导言:</p>
+<blockquote>
+<p>生理上决定了我们的性别，而个人也要将自我认同为是这个共同体的一员，拉康揭示了这个过程。</p>
 </blockquote>
+<p>母子共同体（ A ）:母子处于一个一元的整全的状态。“子”作为主体尚未形成自主意识，处于“自足”。这里对应着“完美”“整全”“互补“等关键词。</p>
 <span id="more"></span>
 
-<p><img src="/images/75.png"></p>
-<blockquote>
-<p>（网络连接示意图）</p>
-</blockquote>
-<h1 id="GFW＆VPN"><a href="#GFW＆VPN" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h1><p>在讲GFW的概念与原理之前，我们先讲讲<a href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>与<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F">DNS</a></p>
-<h2 id="IP地址＆DNS"><a href="#IP地址＆DNS" class="headerlink" title="IP地址＆DNS"></a>IP地址＆DNS</h2><p>如果设备要连接到网络，我们需要一个通讯时使用的标识，叫作IP地址。如果没有IP地址，我们将无法知道哪个设备是发送方，哪个是接收方。</p>
-<p>IP地址只是简简单单的一串数字，其中分为常见的两大类<a href="https://zh.wikipedia.org/wiki/IPv4">IPV4</a>和<a href="https://zh.wikipedia.org/wiki/IPv6">IPV6</a>。IPV4由十进制数字组成，如120.92.174.135，数字间以点分割。IPV6格式可参考对应的wiki条目，此处不再赘述。</p>
-<p>IP地址有两个主要的功能：</p>
-<ol>
-<li><strong>标识主机：</strong>更具体地说，标识其网络接口，并且提供主机在网络中的位置。</li>
-<li><strong>网络寻址：</strong><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">网际协议</a>（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8A%A5">数据报</a>从一个网络模块送到目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，<a href="https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D">域名</a>（name）意味着我们要找什么，<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1">路由</a>（route）代表着如何到达目的地的这个过程。每个<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE">IP数据包</a>的标头包含了发送主机的IP地址和目的主机的IP地址。</li>
-</ol>
-<p>DNS与IP地址的关系，就像电话簿与电话号码一样，通过DNS的解析，才能从域名转化到对应的IP地址。</p>
-<p>知道了IP地址和DNS的大概概念，就可以进一步了解GFW了。</p>
-<h2 id="GFW＆VPN-1"><a href="#GFW＆VPN-1" class="headerlink" title="GFW＆VPN"></a>GFW＆VPN</h2><p>首先看一幅图</p>
-<p><img src="/images/76.png"></p>
-<p>此为GFW工作原理示意图，GFW在数据传输的分光环节将数据传输到GFW地区交换中心，对数据进行分析判别，主要通过DNS污染，IP地址端口，以及深度包检测等技术封锁网络。（其封锁技术可以参考wiki条目，这里只需知道GFW是从大陆境内进行封锁，和简单了解其封锁技术）</p>
-<p>既然GFW会封锁我们的出海数据，且其拦截不可避免，我们就使用一种早已存在的技术——VPN来骗过它的封锁。</p>
-<p>许多公司企业的员工等使用虚拟专用网（VPN）来访问其内部的网络，以达到远程办公的作用。在<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD">中华人民共和国</a>，由于<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">中国大陆境内对海外网络的限制及屏蔽</a>，中国大陆兴起以采用虚拟专用网连接外国网络的<a href="https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%B6%B2%E7%B5%A1%E5%AF%A9%E6%9F%A5">突破网络审查</a>方法，俗称翻墙。许多外资公司、学术单位因欲连回海外网站，也多自行架设VPN或采用付费的VPN服务。</p>
-<p><strong>但是我们必须意识到：使用未经审批的VPN线路是违法的！！！</strong></p>
-<p><img src="/images/77.jpg"></p>
-<p>VPN工作原理十分简单，如图，用户将数据传输至中转服务器（SSH）经过GFW时，GFW会检测你的目标服务器的IP，此时中转服务器的IP不在GFW封锁名单内，可以通过GFW至中转服务器，再由中转服务器传至你想要访问网站的服务器。</p>
-<p>这就是VPN翻墙的大致原理。</p>
-<p>Shadowsocks的原理别无二致，只是数据包过墙前会在本地客户端进行加密，到中转时再进行解密，这样做的好处就是GFW无法将数据包解密分析（但可以根据流量特征进行分析），这大大提高了翻墙的安全性。</p>
+<p>母子分离阶段( <del>A</del> ):“子”的成长及自主意识的形成拉开子与母亲之间的距离“母子不再是一体的，我不完美了”，这里对应着“丧失”“变化””痛苦”等关键词。</p>
+<p>父亲介入阶段( $S_1$&#x3D;S(<del>A</del>) ):子把“完美”的丧失归结于“父亲”的介入。p.s.：这里的父亲只是一个隐喻性质的符号、即使是单亲家庭也会经历这种丧失。（言语，符号）</p>
+<p>弑父阶段:“欲望的辩证法”启动于这个阶段:“子”产生对于“母”的欲望”——成为母亲欲望的对象。为了恢复母子共同体状态孩子开始思考为何自己与母亲会分开，何物使得自己与母亲分开——母亲所欲望的东西是什么？答案是父亲拥有而母亲没有的东西，孩子将其认同为“阳具”——phallus。</p>
+<p>p.s.：这里的phallus并不是Dick或生理意义上的阴茎。实际上它所指称的是“神秘的女性快感”——母亲所欲望的东西。</p>
+<p>前文在标题所提到的符号：“A” 指代的是大它者，也就是那个完美的整全的母子一元关系；“<del>A</del>” 则是 “A” 的丧失</p>
 ]]></content>
       <categories>
         <category>太阳社文章</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
+        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
     <title>没讲明白的导数</title>
-    <url>/p/d5abacfad845/</url>
+    <url>/p/d32ee5572ef9/</url>
     <content><![CDATA[<h1 id="等比数列求和"><a href="#等比数列求和" class="headerlink" title="等比数列求和"></a>等比数列求和</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>a+aq+aq^2+…+aq^n &#x3D; \frac{a(1-q^{n+1})}{1-q}<br>$$</p>
 <p>证：用数学归纳法</p>
 <span id="more"></span>
@@ -217,50 +240,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意识和性别的起源</title>
-    <url>/p/082e2bfcef09/</url>
-    <content><![CDATA[<p>导言:</p>
-<blockquote>
-<p>生理上决定了我们的性别，而个人也要将自我认同为是这个共同体的一员，拉康揭示了这个过程。</p>
-</blockquote>
-<p>母子共同体（ A ）:母子处于一个一元的整全的状态。“子”作为主体尚未形成自主意识，处于“自足”。这里对应着“完美”“整全”“互补“等关键词。</p>
-<span id="more"></span>
-
-<p>母子分离阶段( <del>A</del> ):“子”的成长及自主意识的形成拉开子与母亲之间的距离“母子不再是一体的，我不完美了”，这里对应着“丧失”“变化””痛苦”等关键词。</p>
-<p>父亲介入阶段( $S_1$&#x3D;S(<del>A</del>) ):子把“完美”的丧失归结于“父亲”的介入。p.s.：这里的父亲只是一个隐喻性质的符号、即使是单亲家庭也会经历这种丧失。（言语，符号）</p>
-<p>弑父阶段:“欲望的辩证法”启动于这个阶段:“子”产生对于“母”的欲望”——成为母亲欲望的对象。为了恢复母子共同体状态孩子开始思考为何自己与母亲会分开，何物使得自己与母亲分开——母亲所欲望的东西是什么？答案是父亲拥有而母亲没有的东西，孩子将其认同为“阳具”——phallus。</p>
-<p>p.s.：这里的phallus并不是Dick或生理意义上的阴茎。实际上它所指称的是“神秘的女性快感”——母亲所欲望的东西。</p>
-<p>前文在标题所提到的符号：“A” 指代的是大它者，也就是那个完美的整全的母子一元关系；“<del>A</del>” 则是 “A” 的丧失</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2021年IMO第一题</title>
-    <url>/p/d12e5ee7c9dc/</url>
-    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
-<span id="more"></span>
-
-<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
-<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
-<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
-<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
-<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一些值得思考的理化题目</title>
-    <url>/p/7b7a7c4355cb/</url>
+    <url>/p/1d36e1770b3b/</url>
     <content><![CDATA[<p>题目：</p>
 <ol>
 <li>证明 $\sqrt{2}$ 不是有理数</li>
@@ -286,8 +267,67 @@
       </tags>
   </entry>
   <entry>
+    <title>2021年IMO第一题</title>
+    <url>/p/a0f734b37d1e/</url>
+    <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>设整数 $n \ge 100$ ，伊凡把 n,n+1,…,2n 的每一个数写在不同的卡片上，然后他将这n+1张卡片打乱顺序并分成两堆。证明：至少有一堆中包含两张卡片，使得这两张卡片上的数字之和是一个完全平方数</p>
+<span id="more"></span>
+
+<h1 id="解"><a href="#解" class="headerlink" title="解"></a>解</h1><p>只要在这n+1张卡片上找到3个凉凉相加为完全平方数的数a,b,c，不论如何分堆，总有一堆有这三个数中的其中两个，即满足条件。</p>
+<p>所以，要证，在 $n \ge 100$ 时，n~2n这n+1个数中存在两两相加为完全平方数的三个数。</p>
+<p>由于a,b,c都在一个较小的范围内，不妨假设它们两两相加所得的完全平方数为三个连续的完全平方数，即，令 $h \in N$ ，有：<br>$$<br>\begin{array}{1}<br>a+b&#x3D;h^2 \newline<br>a+c&#x3D;(h+1)^2 \newline<br>b+c&#x3D;(h+2)^2<br>\end{array}<br>$$<br>整理得：<br>$$<br>\begin{array}{1}<br>a &#x3D; \frac{h^2-2h-3}{2} \newline<br>b &#x3D; \frac{h^2+2h+3}{2} \newline<br>c &#x3D; \frac{h^2+6h+5}{2}<br>\end{array}<br>$$<br>分析奇偶性易知，当且仅当h为奇数时，a,b,c为整数，且 $a&lt;b&lt;c$ </p>
+<p>要使在n~2n中找到a,b,c，只要令 $n \le a$ 且 $c \le 2n$ ，即：<br>$$<br>\begin{array}{1}<br>\frac{h^2-2h-3}{2} \ge n \newline<br>\frac{h^2+6h+5}{2} \le 2n<br>\end{array}<br>$$<br>进行一步放缩可得：<br>$$<br>\begin{array}{1}<br>(h-3)^2 \ge 2n \newline<br>(h+3)^2 \le 4n<br>\end{array}<br>$$<br>解得：<br>$$<br>\sqrt{2n}+3 \le h \le 2\sqrt{n}-3<br>$$<br>又因为h为奇数，且在实数中长度为2得闭区间中有且只有一个奇数</p>
+<p>所以令 $\sqrt{2n}+3$ 和 $2\sqrt{n}-3$ 得间隔大于等于2即可，即：<br>$$<br>2\sqrt{n}-3 -(\sqrt{2n}+3) \ge 2<br>$$<br>解得：<br>$$<br>n\ge \frac{64}{6-4\sqrt{2}} \approx 186<br>$$<br>所以当 $n \ge 187$ 时都成立，剩下只要证明 $n \in [100,186]$ 时的情况即可。此时我们只需要代入h&#x3D;17,19,21这样的特殊值，算出a,b,c，使a,b,c包含在n~2n内（$n \in [100,186]$）即可完成剩下的证明。</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>心理学效应</title>
+    <url>/p/1bdb1ff9139d/</url>
+    <content><![CDATA[<h1 id="读心术"><a href="#读心术" class="headerlink" title="读心术"></a>读心术</h1><p>实质：以交流作为媒介，在他人的各方面露出的信息（如面部表情、眼睛的状态、穿着等能够用感官获取的）里进行整理、归纳并从归案出的信息群中推导出被读心者的心里活动或行动</p>
+<blockquote>
+<p>p.s. </p>
+<ol>
+<li><p>若被读心者本身没有透露出较显著的特征时，将无法进行读心术（比如三无、扑克脸、无法让人确认是为了做什么的穿着等）</p>
+</li>
+<li><p>交流的方式不知有对话，还有观察、触摸等能得知对方心理变化的一系列手段</p>
+</li>
+</ol>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="从众效应"><a href="#从众效应" class="headerlink" title="从众效应"></a>从众效应</h1><p>指个人在群体压力下（可以是存在的，也可以是个人臆想的），改变自身的认知和行动，使其以多数人或权威为准则，在行动上努力与之趋于一致的现象（一致能发生在思想和行动这两个方面）</p>
+<blockquote>
+<ol>
+<li>从众心理和从众效应：两者其实没什么太大差别，但就我个人的看法来说，从众心理是从众效应的表现形式。</li>
+<li>从众行为的结果存在三种可能性：积极的一致性、消极的一致性、无异议的一致性</li>
+<li>作用<ol>
+<li>积极：规范人们接受行为的模式，使之成为接受的习惯；形成“流行”</li>
+<li>消极：抑制个人理解信息的主观能动性，会对少数群体加以否定，对发明、发现的积极性产生抑制作用</li>
+</ol>
+</li>
+</ol>
+<p>p.s. 从众本身是一种普通心理现象，没有好坏之分，其作用由在什么问题及场合上产生从众行为决定</p>
+</blockquote>
+<h1 id="破窗效应"><a href="#破窗效应" class="headerlink" title="破窗效应"></a>破窗效应</h1><p>一种关于环境对人们心理造成暗示或诱导的认识。</p>
+<p>e.g. 有一面墙，如果墙上出现了脏东西但没有及时清理，将会出现墙逐渐被人为的污渍填满的情况</p>
+<p>破窗效应是犯罪学（之前讲错了）的一个理论。理论认为：环境中的不良现象若被放任，将会像套娃从里到外一样，影响力越来越大，从开始的人人效仿发展到几乎无可挽回的地步。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>这此属实是我准备的不够，语言美组织好，导致会看了没多久就没什么可以讲的了，在这里感谢国政同学的救场😂，如果对心理学有兴趣的，可以去了解心理学的发展</p>
+]]></content>
+      <categories>
+        <category>太阳社文章</category>
+      </categories>
+      <tags>
+        <tag>社会科学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>极限、符号、开平方、三次方程</title>
-    <url>/p/d563d768cbae/</url>
+    <url>/p/9c06977b0683/</url>
     <content><![CDATA[<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><p>$\lim_{n \to \infty} {a^n} &#x3D; \alpha$​ 可以简写为 $a^n \to \alpha (n \to \infty)$ </p>
 <p>等价于它的定义：<br>$$<br>\forall \varepsilon ， \exists M \in N , 当n&gt;M时，\left |\alpha - a^n \right |&lt;\varepsilon<br>$$</p>
 <span id="more"></span>
@@ -325,46 +365,6 @@
       </categories>
       <tags>
         <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>心理学效应</title>
-    <url>/p/0427e089d3a6/</url>
-    <content><![CDATA[<h1 id="读心术"><a href="#读心术" class="headerlink" title="读心术"></a>读心术</h1><p>实质：以交流作为媒介，在他人的各方面露出的信息（如面部表情、眼睛的状态、穿着等能够用感官获取的）里进行整理、归纳并从归案出的信息群中推导出被读心者的心里活动或行动</p>
-<blockquote>
-<p>p.s. </p>
-<ol>
-<li><p>若被读心者本身没有透露出较显著的特征时，将无法进行读心术（比如三无、扑克脸、无法让人确认是为了做什么的穿着等）</p>
-</li>
-<li><p>交流的方式不知有对话，还有观察、触摸等能得知对方心理变化的一系列手段</p>
-</li>
-</ol>
-</blockquote>
-<span id="more"></span>
-
-<h1 id="从众效应"><a href="#从众效应" class="headerlink" title="从众效应"></a>从众效应</h1><p>指个人在群体压力下（可以是存在的，也可以是个人臆想的），改变自身的认知和行动，使其以多数人或权威为准则，在行动上努力与之趋于一致的现象（一致能发生在思想和行动这两个方面）</p>
-<blockquote>
-<ol>
-<li>从众心理和从众效应：两者其实没什么太大差别，但就我个人的看法来说，从众心理是从众效应的表现形式。</li>
-<li>从众行为的结果存在三种可能性：积极的一致性、消极的一致性、无异议的一致性</li>
-<li>作用<ol>
-<li>积极：规范人们接受行为的模式，使之成为接受的习惯；形成“流行”</li>
-<li>消极：抑制个人理解信息的主观能动性，会对少数群体加以否定，对发明、发现的积极性产生抑制作用</li>
-</ol>
-</li>
-</ol>
-<p>p.s. 从众本身是一种普通心理现象，没有好坏之分，其作用由在什么问题及场合上产生从众行为决定</p>
-</blockquote>
-<h1 id="破窗效应"><a href="#破窗效应" class="headerlink" title="破窗效应"></a>破窗效应</h1><p>一种关于环境对人们心理造成暗示或诱导的认识。</p>
-<p>e.g. 有一面墙，如果墙上出现了脏东西但没有及时清理，将会出现墙逐渐被人为的污渍填满的情况</p>
-<p>破窗效应是犯罪学（之前讲错了）的一个理论。理论认为：环境中的不良现象若被放任，将会像套娃从里到外一样，影响力越来越大，从开始的人人效仿发展到几乎无可挽回的地步。</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>这此属实是我准备的不够，语言美组织好，导致会看了没多久就没什么可以讲的了，在这里感谢国政同学的救场😂，如果对心理学有兴趣的，可以去了解心理学的发展</p>
-]]></content>
-      <categories>
-        <category>太阳社文章</category>
-      </categories>
-      <tags>
-        <tag>社会科学</tag>
       </tags>
   </entry>
   <entry>
@@ -459,7 +459,7 @@
 </li>
 </ul>
 <blockquote>
-<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#x6e;&#120;&#117;&#x65;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#x78;&#115;&#46;&#x79;&#x75;&#x61;&#x6e;&#120;&#117;&#x65;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>欢迎一起讨论和解决这些问题，我的邮箱：<a href="mailto:&#120;&#x73;&#46;&#121;&#x75;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#120;&#x73;&#46;&#121;&#x75;&#97;&#x6e;&#x78;&#x75;&#101;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -473,7 +473,7 @@
   </entry>
   <entry>
     <title>高中向量</title>
-    <url>/p/16c94bfc4359/</url>
+    <url>/p/290d77c2f90f/</url>
     <content><![CDATA[<h1 id="若F是域，则应满足以下性质："><a href="#若F是域，则应满足以下性质：" class="headerlink" title="若F是域，则应满足以下性质："></a>若F是域，则应满足以下性质：</h1><ol>
 <li>交换性：对所有 $\alpha ,\beta \in F$ 有 $\alpha +\beta &#x3D; \beta +\alpha , \alpha \beta &#x3D; \beta \alpha$ </li>
 <li>结合性：对所有 $\alpha , \beta , \gamma \in F$ ，有 $(\alpha +\beta) + \gamma &#x3D; \alpha + (\beta + \gamma) , (\alpha \beta) \gamma &#x3D; \alpha (\beta \gamma)$ </li>
@@ -555,6 +555,40 @@
       </tags>
   </entry>
   <entry>
+    <title>梦乡</title>
+    <url>/p/0546e825fd4c/</url>
+    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
+<p>你为何要哀嚎？</p>
+<p>是在等待着被谁听到吗？</p>
+<span id="more"></span>
+
+<br/>
+
+<p>我听到了，</p>
+<p>愈演愈烈，</p>
+<p>与万千事物共鸣，</p>
+<p>在空谷传响。</p>
+<br/>
+
+<p>动物能听见人的哭声吗？</p>
+<p>动物也有它的哭腔。</p>
+<br/>
+
+<p>几小时的夜能让我安眠？</p>
+<p>就让我温良的进入梦乡。</p>
+<p>若沉默是金，</p>
+<p>那么热闹是孩子嘴里的一颗糖。</p>
+<br/>
+
+<p>为世俗道德标准否弃的人，</p>
+<p>我们无法施爱。</p>
+<p>但上帝爱我们大家。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
     <title>护城河</title>
     <url>/p/e76ba10f5057/</url>
     <content><![CDATA[<p>霓虹越过街角，</p>
@@ -593,40 +627,6 @@
       </categories>
   </entry>
   <entry>
-    <title>梦乡</title>
-    <url>/p/0546e825fd4c/</url>
-    <content><![CDATA[<p>嘿，酒肉欢娱，</p>
-<p>你为何要哀嚎？</p>
-<p>是在等待着被谁听到吗？</p>
-<span id="more"></span>
-
-<br/>
-
-<p>我听到了，</p>
-<p>愈演愈烈，</p>
-<p>与万千事物共鸣，</p>
-<p>在空谷传响。</p>
-<br/>
-
-<p>动物能听见人的哭声吗？</p>
-<p>动物也有它的哭腔。</p>
-<br/>
-
-<p>几小时的夜能让我安眠？</p>
-<p>就让我温良的进入梦乡。</p>
-<p>若沉默是金，</p>
-<p>那么热闹是孩子嘴里的一颗糖。</p>
-<br/>
-
-<p>为世俗道德标准否弃的人，</p>
-<p>我们无法施爱。</p>
-<p>但上帝爱我们大家。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
     <title>孤独</title>
     <url>/p/f0d9311bdf8f/</url>
     <content><![CDATA[<p>人群的嚣鸣​</p>
@@ -647,6 +647,72 @@
 <p>所有有关我的一切。​</p>
 <p>我的孤独是一座花园，​</p>
 <p>宿莽是这唯一的野草。</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>圆</title>
+    <url>/p/9899c4c2be8d/</url>
+    <content><![CDATA[<p>穿越十二星座的旅途周而复始</p>
+<p>泛灰的同心圆一圈圈荡漾舟中</p>
+<p>伫立在无人的街角、地球的边界</p>
+<p>记忆无意隐秘在墙角</p>
+<p>黄昏吞没缘的循环</p>
+<span id="more"></span>
+
+<br/>
+
+<p>现象与意识分崩离析</p>
+<p>大地冲破荒诞的一瞬</p>
+<p>太阳在苍穹之上坠落</p>
+<p>泛舟繁星映带左右</p>
+<p>神明也不会知晓月的阴晴圆缺</p>
+<br/>
+
+<p>审判的十字架已降落</p>
+<p>余下的七十六个星座被南北分割</p>
+<p>我带走我们不曾相遇的消息</p>
+<p>留下拂晓时分一片叶的悲哀</p>
+<p>虔诚的等待彗星再次回归</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>你</title>
+    <url>/p/c2baf410370c/</url>
+    <content><![CDATA[<p>我将炙热的目光投向你</p>
+<p>你是那无边的梦</p>
+<p>编织进星星的网</p>
+<span id="more"></span>
+
+<p>让我的勇气与你共舞</p>
+<p>与你的正直、善良共鸣</p>
+<p>且不要让悲伤将你我占据</p>
+<p>风迎着我们的自由而吹</p>
+<p>日月将追寻我们前进的步伐</p>
+<br/>
+
+<p>我望着</p>
+<p>飘于人间的你的身影</p>
+<p>只身没入黄昏</p>
+<p>我久久伫立</p>
+<p>用时间的流淌刻下</p>
+<p>黑夜的点点滴滴</p>
+<p>大理石是你</p>
+<p>猫猫狗狗也是你</p>
+<br/>
+
+<p>醒来</p>
+<p>见万物归于尘土之际</p>
+<p>我们仍旧谈论着</p>
+<p>前朝的风花雪月</p>
+<p>你说</p>
+<p>爱的一面是欢喜</p>
+<p>另一面是忧伤</p>
 ]]></content>
       <categories>
         <category>诗集</category>
@@ -679,6 +745,29 @@
 <p>是谁在探寻着</p>
 <p>腐朽的神迹？</p>
 <p>是你啊，海的女儿！</p>
+]]></content>
+      <categories>
+        <category>诗集</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>梦</title>
+    <url>/p/fe550c1ab652/</url>
+    <content><![CDATA[<p>睡梦中的思绪，</p>
+<p>照进现实。</p>
+<span id="more"></span>
+
+<p>是时候了，</p>
+<p>让滚轮走上生死台，</p>
+<p>呵，命运在此</p>
+<p>秋在彼岸终结。</p>
+<p>于是山峦的愤怒，</p>
+<p>与河流的忧愁</p>
+<p>便不再有力量。</p>
+<p>就饮酒，食饭，</p>
+<p>倾泻出下一场长眠的夜。</p>
+<p>在沉默蔓延的天际，沉默</p>
+<p>落叶逃遁，尘土徘徊。</p>
 ]]></content>
       <categories>
         <category>诗集</category>
@@ -900,105 +989,6 @@
       </tags>
   </entry>
   <entry>
-    <title>圆</title>
-    <url>/p/9899c4c2be8d/</url>
-    <content><![CDATA[<p>穿越十二星座的旅途周而复始</p>
-<p>泛灰的同心圆一圈圈荡漾舟中</p>
-<p>伫立在无人的街角、地球的边界</p>
-<p>记忆无意隐秘在墙角</p>
-<p>黄昏吞没缘的循环</p>
-<span id="more"></span>
-
-<br/>
-
-<p>现象与意识分崩离析</p>
-<p>大地冲破荒诞的一瞬</p>
-<p>太阳在苍穹之上坠落</p>
-<p>泛舟繁星映带左右</p>
-<p>神明也不会知晓月的阴晴圆缺</p>
-<br/>
-
-<p>审判的十字架已降落</p>
-<p>余下的七十六个星座被南北分割</p>
-<p>我带走我们不曾相遇的消息</p>
-<p>留下拂晓时分一片叶的悲哀</p>
-<p>虔诚的等待彗星再次回归</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>梦</title>
-    <url>/p/fe550c1ab652/</url>
-    <content><![CDATA[<p>睡梦中的思绪，</p>
-<p>照进现实。</p>
-<span id="more"></span>
-
-<p>是时候了，</p>
-<p>让滚轮走上生死台，</p>
-<p>呵，命运在此</p>
-<p>秋在彼岸终结。</p>
-<p>于是山峦的愤怒，</p>
-<p>与河流的忧愁</p>
-<p>便不再有力量。</p>
-<p>就饮酒，食饭，</p>
-<p>倾泻出下一场长眠的夜。</p>
-<p>在沉默蔓延的天际，沉默</p>
-<p>落叶逃遁，尘土徘徊。</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>你</title>
-    <url>/p/c2baf410370c/</url>
-    <content><![CDATA[<p>我将炙热的目光投向你</p>
-<p>你是那无边的梦</p>
-<p>编织进星星的网</p>
-<span id="more"></span>
-
-<p>让我的勇气与你共舞</p>
-<p>与你的正直、善良共鸣</p>
-<p>且不要让悲伤将你我占据</p>
-<p>风迎着我们的自由而吹</p>
-<p>日月将追寻我们前进的步伐</p>
-<br/>
-
-<p>我望着</p>
-<p>飘于人间的你的身影</p>
-<p>只身没入黄昏</p>
-<p>我久久伫立</p>
-<p>用时间的流淌刻下</p>
-<p>黑夜的点点滴滴</p>
-<p>大理石是你</p>
-<p>猫猫狗狗也是你</p>
-<br/>
-
-<p>醒来</p>
-<p>见万物归于尘土之际</p>
-<p>我们仍旧谈论着</p>
-<p>前朝的风花雪月</p>
-<p>你说</p>
-<p>爱的一面是欢喜</p>
-<p>另一面是忧伤</p>
-]]></content>
-      <categories>
-        <category>诗集</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>10月高数题集</title>
-    <url>/p/9047f6abe9f1/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>$$<br>\lim_{x\to1}{\frac{1}{1-x}-\frac{3}{1-x^3}} &#x3D; \lim_{x\to1}{\frac{1+x+x^2-3}{1-x^3}} &#x3D; \lim_{x\to1}{\frac{(x-1)(x+2)}{(1-x)(1+x+x^2)}}<br>$$</p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>雨</title>
     <url>/p/6501ae53f960/</url>
     <content><![CDATA[<p>雨悄悄地来，</p>
@@ -1055,5 +1045,10 @@
       <categories>
         <category>诗集</category>
       </categories>
+  </entry>
+  <entry>
+    <title>高数题集一</title>
+    <url>/p/13894366f32c/</url>
+    <content><![CDATA[<span id="more"></span>]]></content>
   </entry>
 </search>
